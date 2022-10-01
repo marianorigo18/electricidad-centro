@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;600;700&display=swap');
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #717171;
+}
+li{
+    list-style-type: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #F5F5F5;
+    font-family: 'Nunito', sans-serif;
+}
+.menu{
+    background-color: #FFFFFF;
+    color: #000;
+    height: 70px;
+}
+.menu__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+.menu__logo{
+    font-size: 27px;
+}
+.menu__links{
+    height: 100%;
+    transition: transform .5s;
+    display: flex;
+}
+.menu__link:hover{
+    transition: .3s;
+    background-color: #ABEBC6;
+    color: #000;
+    font-weight: 600;
+    overflow: hidden;
+}
+.menu__item{
+    position: relative;
+    height: 100%;
+    --clip: polygon(0 0, 100% 0, 100% 0, 0 0);
+    --transform: rotate(-90deg);
+}
+.menu__item:hover{
+    --clip: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    --transform: rotate(0);
+}
+.menu__arrow{
+    transform: var(--transform);
+    transition: transform .3s;
+    display: block;
+    margin-left: 3px;
+    font-size: 20px;
+}
+.menu__link{
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    height: 100%;
+    
+}
+.menu__nesting{
+    transition: clip-path .3s;
+    clip-path: var(--clip);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: max-content;
+    transform: translateY(100%);
+    background-color: #FFFFFF;
+}
+.menu__link--inside{
+    padding: 27px 100px 27px 20px;
+}
+.menu__link--inside:hover{
+    background-color: #ABEBC6; 
+}
+.menu__hamburguer{
+    height: 100%;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    cursor: pointer;
+    display: none;
+}
+.menu__img{
+    display: block;
+}
+@media(max-width: 800px){
+    .menu__hamburguer{
+        display: flex;
+    }
+
+    .menu__item{
+        --clip:0;
+        overflow: hidden;
+    }
+    .menu__links{
+     position: fixed;
+     max-width: 400px;   
+     width: 100%;
+     top: 70px;
+     bottom: 0;
+     right: 0;
+     background-color: #FFFFFF;
+     overflow-y: auto;
+     display: grid;
+     grid-auto-rows: max-content;
+    }
+    .menu__link{
+        padding: 25px 0;
+        padding-left: 30px;
+        height: auto;
+    }
+    .menu__arrow{
+        margin-left: auto;
+        margin-right: 20px;
+    }
+    .menu__nesting{
+        display: grid;
+        position: unset;
+        width: 100%;
+        transform: translateY(0);
+        height: 0;
+        transition: height .3s;
+    }
+    .menu__link--inside{
+        width: 90%;
+        margin-left: auto;
+        border-left: 1px solid #717171;
+    }
+
+}
