@@ -21,32 +21,31 @@ class App extends Component {
       { id: 1, name: "logo", img: "/images/logos/logo-ele-centro-three.png" },
     ],
     topicSection: [
-      {id: 1, name: "home with ilumination", img: "/images/topic-sections/ilumination/home-with-ilumination.jpg"}
-    ]
+      {
+        id: 2,
+        name: "home with ilumination",
+        img: "/images/topic-sections/ilumination/home-with-ilumination.jpg",
+      },
+    ],
   };
   render() {
     return (
       <BrowserRouter>
-        <header>
           <Navbar logos={this.state.logos} />
           <Routes>
-            <Route path="/" element={<Home topicSection={this.state.topicSection}/>} />
+            <Route path="/" element={<Home topicSection={this.state.topicSection} />}/>
             <Route path="/industria" element={<Industria />} />
             <Route path="/iluminacion" element={<Iluminacion />} />
             <Route path="/conductores" element={<Conductores />} />
             <Route path="/terminales" element={<Terminales />} />
             <Route path="/normalizados" element={<Normalizados />} />
-            <Route
-              path="/instrumentos-de-medicion"
-              element={<Instrumentos />}
-            />
+            <Route path="/instrumentos-de-medicion"element={<Instrumentos />}/>
             <Route path="/linea-aerea" element={<LineaAerea />} />
             <Route path="/conjuntos-armados" element={<ConjuntosArmados />} />
             <Route path="/luces-emergencia" element={<LucesEmergencia />} />
             <Route path="/herramientas" element={<Herramientas />} />
             <Route path="/morceteria" element={<Morceteria />} />
           </Routes>
-        </header>
       </BrowserRouter>
     );
   }

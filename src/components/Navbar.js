@@ -14,13 +14,13 @@ class Navbar extends Component {
           <ul className="menu__links">
             <li className="menu__item">
               <Link to="/" className="menu__link">
-                Home
+                Inicio
               </Link>
             </li>
 
             <li className="menu__item menu__item--show">
               <Link to="/" className="menu__link">
-                Category
+                Categorias
                 <i class="bx bx-chevron-down menu__arrow"></i>
               </Link>
               <ul className="menu__nesting">
@@ -117,7 +117,7 @@ class Navbar extends Component {
 
             <li className="menu__item menu__item--show">
               <a href="/" className="menu__link">
-                Sellers
+                Vededores
                 <i class="bx bx-chevron-down menu__arrow"></i>
               </a>
 
