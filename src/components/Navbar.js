@@ -4,6 +4,7 @@ import Logo from "./Logo";
 
 import "./Navbar.css";
 
+
 class Navbar extends Component {
   render() {
     const {logos} = this.props
@@ -14,7 +15,7 @@ class Navbar extends Component {
           <ul className="menu__links">
             <li className="menu__item">
               <Link to="/" className="menu__link">
-                Inicio
+                INICIO
               </Link>
             </li>
 

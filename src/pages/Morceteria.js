@@ -1,13 +1,24 @@
-import { Component } from "react";
+import React from "react";
 
-class Morceteria extends Component{
-    render(){
-        return(
-            <div className="layout">
-                <h1>Morceteria...</h1>
-            </div>
-        )
-    }
-}
+const Morceteria = ({topic}) => {
+  return (
+    <div className="layout">
+      <div className="topic__container">
+        <div className="topic-container__img">
+          <img
+            className="topic__img"
+            src={topic[10].img}
+            alt={topic[10].title}
+          ></img>
+        </div>
+        <div className="topic__description">
+          <p className="phrase">{topic[10].phrase}</p>
+          <h2 className="title">{topic[10].title}</h2>
+          <p className="categories">{topic[10].categories}</p>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export default Morceteria;
