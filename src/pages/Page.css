@@ -17,33 +17,57 @@
     transform: scale(1.01);
     box-shadow: 0px 1px 30px rgba(0,0,0, 0.1);
 }
+.topic-container__img{
+    transition: .3s;
+}
+.topic-container__img:hover{
+    transform: scale(1.01);
+}
+.topic__description{
+    transition: .3s;
+}
+.topic__description:hover{
+    transform: scale(1.05);
+}
 .topic__img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 .phrase{
+    transition: .3s;
     color: #838383;
     font-size: 10px;
-    margin-top: 100px;
-    margin-left: 50px;
+    padding-top: 100px;
+    padding-left: 50px;
     text-transform: uppercase;
+}
+.phrase:hover{
+    transform: scale(1.02);
 }
 .title{
+    transition: .3s;
     font-size: 40px;
-    margin-top: 40px;
+    padding-top: 40px;
     font-weight: 400;
-    margin-left: 50px;
+    padding-left: 50px;
     text-transform: uppercase;
 }
+.title:hover{
+    transform: scale(1.02);
+}
 .categories{
+    transition: .3s;
     color: #838383;
     font-size: 10px;
-    margin-top: 25px;
-    margin-left: 50px;
-    margin-right: 50px;
+    padding-top: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
     line-height: 17px;
     text-transform: uppercase;
+}
+.categories:hover{
+    transform: scale(1.02);
 }
 .products{
     display: grid;
@@ -52,11 +76,22 @@
     padding: 1rem;
 }
 .product__card{
+    border-radius: 5px;
     background-color: #FFFFFF;
+    transition: .2s;
+}
+.product__card:hover{
+    transform: scale(1.01);
+    box-shadow: 0px 1px 30px rgba(0,0,0, 0.1);
 }
 .product__img{
     width: 100%;
     object-fit: cover;
+    padding: 5px;
+    transition: .3s;
+}
+.product__img:hover{
+    transform: scale(1.05);
 }
 .product__title{
     text-align: center;
@@ -65,19 +100,23 @@
     font-size: 14px;
     padding: 1rem;
     font-weight: lighter;
+    transition: .3s;
+}
+.product__title:hover{
+    transform: scale(1.05);
 }
 @media(max-width: 1100px){
     .topic__container{
         grid-auto-rows: 320px;
     }
     .phrase{
-        margin-top: 70px;
+        padding-top: 70px;
     }
 }
 @media(max-width: 720px){
     .topic__container{
         grid-template-columns: repeat(1, 1fr);
-        margin: 24px 0px;
+        padding: 24px 0px;
     }
     .topic__container:hover{
         transform: scale(1.005);
@@ -94,14 +133,14 @@
         grid-auto-rows: 250px auto;
     }
     .phrase{
-        margin-top: 30px;
-        margin-left: 0;
+        padding-top: 30px;
+        padding-left: 15px;
     }
     .title{
-        margin-left: 0;
-        margin-top: 16px;
+        padding-left: 15px;
+        padding-top: 16px;
     }
     .categories{
-        margin-left: 0;
+        padding-left: 15px;
     }
 }

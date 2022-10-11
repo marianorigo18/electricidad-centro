@@ -115,33 +115,6 @@ class Navbar extends Component {
                 </li>
               </ul>
             </li>
-
-            <li className="menu__item menu__item--show">
-              <a href="/" className="menu__link">
-                Vededores
-                <i class="bx bx-chevron-down menu__arrow"></i>
-              </a>
-
-              <ul className="menu__nesting">
-                <li className="menu__inside">
-                  <a href="/" className="menu__link menu__link--inside">
-                    Seller 1
-                  </a>
-                </li>
-
-                <li className="menu__inside">
-                  <a href="/" className="menu__link menu__link--inside">
-                    Seller 2
-                  </a>
-                </li>
-
-                <li className="menu__inside">
-                  <a href="/" className="menu__link menu__link--inside">
-                    Seller 3
-                  </a>
-                </li>
-              </ul>
-            </li>
           </ul>
           <div className="menu__hamburguer">
             <i class="bx bx-menu-alt-right menu__img"></i>

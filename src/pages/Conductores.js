@@ -1,4 +1,4 @@
-import { topic } from "../exports/data";
+import { topic, conductoresT } from "../exports/data";
 import "./Page.css";
 
 const Conductores = () => {
@@ -18,6 +18,18 @@ const Conductores = () => {
             <p className="categories" >{topic[2].categories}</p>
           </div>
         </div>
+        <div className="products">
+        {conductoresT.map((product) => (
+          <div className="product__card">
+            <img
+              className="product__img"
+              src={product.img}
+              alt={product.title}
+            />
+            <p className="product__title">{product.title}</p>
+          </div>
+        ))}
+      </div>
       </div>
   )
 }
