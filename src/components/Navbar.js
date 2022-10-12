@@ -4,14 +4,13 @@ import Logo from "./Logo";
 
 import "./Navbar.css";
 
-
 class Navbar extends Component {
   render() {
-    const {logos} = this.props
+    const { logos } = this.props;
     return (
       <nav className="menu">
         <section className="menu__container">
-           <Logo logos={logos}/>
+          <Logo logos={logos} />
           <ul className="menu__links">
             <li className="menu__item">
               <Link to="/" className="menu__link">
@@ -120,6 +119,19 @@ class Navbar extends Component {
             <i class="bx bx-menu-alt-right menu__img"></i>
           </div>
         </section>
+        <div className="anuncio">
+          <Link to="/industria" className="anuncio__link">industria</Link>
+          <Link to="/iluminacion" className="anuncio__link">iluminacion</Link>
+          <Link to="/conductores" className="anuncio__link">conductores</Link>
+          <Link to="/terminales" className="anuncio__link">terminales</Link>
+          <Link to="/normalizados" className="anuncio__link">normalizados</Link>
+          <Link to="/instrumentos-de-medicion" className="anuncio__link">medicion</Link>
+          <Link to="/linea-aerea" className="anuncio__link">aereo</Link>
+          <Link to="/conjuntos-armados" className="anuncio__link">armados</Link>
+          <Link to="/luces-emergencia" className="anuncio__link">emergencia</Link>
+          <Link to="/herramientas" className="anuncio__link">herramientas</Link>
+          <Link to="/morceteria" className="anuncio__link">morceteria</Link>
+        </div>
       </nav>
     );
   }

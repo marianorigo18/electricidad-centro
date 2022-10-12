@@ -1,4 +1,4 @@
-const Normalizados = ({ topic }) => {
+const Normalizados = ({ topic, normalizadosT }) => {
   return (
     <div className="layout">
       <div className="topic__container">
@@ -14,6 +14,14 @@ const Normalizados = ({ topic }) => {
           <h2 className="title">{topic[4].title}</h2>
           <p className="categories">{topic[4].categories}</p>
         </div>
+      </div>
+      <div className="products">
+        {normalizadosT.map((product) => (
+          <div className="product__card">
+            <img className="product__img" src={product.img} alt={product.title}/>
+              <p className="product__title">{product.title}</p>
+          </div>
+        ))}
       </div>
     </div>
   );

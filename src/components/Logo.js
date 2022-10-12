@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 class Logo extends Component {
   render() {
     const { logos } = this.props;
-    console.log(this.props);
     return (
       <Link to="/">
         <img src={logos[0].img} alt={logos[0].name}></img>

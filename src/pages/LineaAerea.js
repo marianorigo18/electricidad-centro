@@ -1,6 +1,6 @@
 import React from "react";
 
-const LineaAerea = ({topic}) => {
+const LineaAerea = ({topic, aereoT}) => {
   return (
     <div className="layout">
       <div className="topic__container">
@@ -16,6 +16,14 @@ const LineaAerea = ({topic}) => {
           <h2 className="title">{topic[6].title}</h2>
           <p className="categories">{topic[6].categories}</p>
         </div>
+      </div>
+      <div className="products">
+        {aereoT.map((product) => (
+          <div className="product__card">
+            <img className="product__img" src={product.img} alt={product.title}/>
+              <p className="product__title">{product.title}</p>
+          </div>
+        ))}
       </div>
     </div>
   );

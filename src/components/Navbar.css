@@ -35,6 +35,12 @@ body{
     height: 100%;
     margin: 0 auto;
 }
+.menu__container a img{
+    transition: .3s;
+}
+.menu__container a img:hover{
+    transform: scale(1.05);
+}
 .menu__logo{
     font-size: 27px;
 }
@@ -104,6 +110,28 @@ body{
 .menu__img{
     display: block;
 }
+.anuncio{
+    overflow-x: scroll;
+    margin: auto;
+    padding: 5px;
+    text-align: center;
+}
+.anuncio::-webkit-scrollbar{
+    height: 0px;
+}
+.anuncio__link{
+    padding: 5px 10px;
+    text-transform: uppercase;
+    font-size: 12px;
+    text-decoration: underline;
+    color: #7B7D7D;
+    transition: .3s;
+}
+.anuncio__link:hover{
+    color: #088A08;
+    font-size: 14px;
+}
+
 @media(max-width: 800px){
     .menu__hamburguer{
         display: flex;

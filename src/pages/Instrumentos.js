@@ -1,5 +1,5 @@
 
-const Instrumentos = ({ topic }) => {
+const Instrumentos = ({ topic, instrumentosT }) => {
   return (
     <div className="layout">
       <div className="topic__container">
@@ -15,6 +15,18 @@ const Instrumentos = ({ topic }) => {
           <h2 className="title">{topic[5].title}</h2>
           <p className="categories">{topic[5].categories}</p>
         </div>
+      </div>
+      <div className="products">
+        {instrumentosT.map((product) => (
+          <div className="product__card">
+            <img
+              className="product__img"
+              src={product.img}
+              alt={product.title}
+            />
+            <p className="product__title">{product.title}</p>
+          </div>
+        ))}
       </div>
     </div>
   );

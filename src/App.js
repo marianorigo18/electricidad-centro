@@ -15,7 +15,7 @@ import LucesEmergencia from "./pages/LucesEmergencia";
 import Herramientas from "./pages/Herramientas";
 import Morceteria from "./pages/Morceteria";
 
-import {logos, topic, iluminacionT} from './exports/data'
+import {logos, topic, iluminacionT, normalizadosT, instrumentosT, aereoT} from './exports/data'
 
 class App extends Component {
 
@@ -34,9 +34,9 @@ class App extends Component {
             <Route path="/iluminacion" element={<Iluminacion iluminacionT={iluminacionT}/>} />
             <Route path="/conductores" element={<Conductores topic={topic}/>} />
             <Route path="/terminales" element={<Terminales topic={topic}/>} />
-            <Route path="/normalizados" element={<Normalizados topic={topic}/>} />
-            <Route path="/instrumentos-de-medicion"element={<Instrumentos topic={topic}/>}/>
-            <Route path="/linea-aerea" element={<LineaAerea topic={topic}/>} />
+            <Route path="/normalizados" element={<Normalizados topic={topic} normalizadosT={normalizadosT}/>} />
+            <Route path="/instrumentos-de-medicion"element={<Instrumentos topic={topic} instrumentosT={instrumentosT}/>}/>
+            <Route path="/linea-aerea" element={<LineaAerea topic={topic} aereoT={aereoT}/>} />
             <Route path="/conjuntos-armados" element={<ConjuntosArmados topic={topic}/>} />
             <Route path="/luces-emergencia" element={<LucesEmergencia topic={topic}/>} />
             <Route path="/herramientas" element={<Herramientas topic={topic}/>} />

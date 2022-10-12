@@ -43,6 +43,46 @@ import preaislados from "../assets/terminales/preaislados.jpg"
 import bimetalicoForjado from "../assets/terminales/bimetalico-forjado.jpg"
 import bimetalico from "../assets/terminales/bimetalico.jpg"
 import terminalAl from "../assets/terminales/terminal-aluminio.jpg"
+//Normalizados
+import abrazaderas from "../assets/normalizados/abrazaderas.jpg"
+import accesoriosPHiloDeGuardia from "../assets/normalizados/accesorios-p-hilo-de-guardia.jpg"
+import aisladoresDePorcelana from "../assets/normalizados/aisladores-de-porcelana.jpg"
+import aisladoresPolimericos from "../assets/normalizados/aisladores-polimericos.jpg"
+import anclajes from "../assets/normalizados/anclajes.jpg"
+import arandelas from "../assets/normalizados/arandelas.jpg"
+import atadurasYAmarres from "../assets/normalizados/ataduras-y-amarres.jpg"
+import brazos from "../assets/normalizados/brazos.jpg"
+import bulones from "../assets/normalizados/bulones.jpg"
+import cables from "../assets/normalizados/cables.jpg"
+import chapas from "../assets/normalizados/crusetas.jpg"
+import elementosDeCadena from "../assets/normalizados/elementos-de-cadena.jpg"
+import guardacabos from "../assets/normalizados/guardacabo.jpg"
+import jabalinas from "../assets/normalizados/jabalinas.jpg"
+import mensulasYMorsas from "../assets/normalizados/mensulas-y-morsas.jpg"
+import morcetosConectoresYGrampas from "../assets/normalizados/morcetos-conectores-y-grampas.jpg"
+import ojales from "../assets/normalizados/ojales.jpg"
+import pernos from "../assets/normalizados/pernos.jpg"
+import proteccionesElectricas from "../assets/normalizados/protecciones-electricas.jpg"
+import seccionadores from "../assets/normalizados/seccionadores.jpg"
+import tensores from "../assets/normalizados/tensores.jpg"
+import tillas from "../assets/normalizados/tillas.jpg"
+import varios from "../assets/normalizados/varios.jpg"
+import yugos from "../assets/normalizados/yugos.jpg"
+//Instrumentos
+import buscapoloInductivo from "../assets/instrumentos/buscapolo-inductivo.jpg"
+import buscapolo from "../assets/instrumentos/buscapolo.jpg"
+import multimetroTwo from "../assets/instrumentos/multimetro-two.jpg"
+import multimetro from "../assets/instrumentos/multimetro.jpg"
+import pinzaAmperometrica from "../assets/instrumentos/pinza-amperometrica.jpg"
+import puntaPrueba from "../assets/instrumentos/punta-prueba.jpg"
+//aereo
+import pkd14 from "../assets/aereo/pkd-14.jpg"
+import pkd16 from "../assets/aereo/pkd-16.jpg"
+import pkd31 from "../assets/aereo/pkd-31.jpg"
+import pkd20 from "../assets/aereo/pkd20.jpg"
+import pkr20 from "../assets/aereo/pkr20.jpg"
+import pks10cf from "../assets/aereo/pks-10cf.jpg"
+import preensambladoTwo from "../assets/aereo/preensamblado.jpg"
 
 
 export const logos = {id: 1, img: logo, alt: "logo de electricidad centro"}
@@ -275,3 +315,197 @@ export const terminalesT = [
     title: "aluminio"
   },
 ]
+
+export const normalizadosT = [
+  {
+    id: 1,
+    img: abrazaderas,
+    title: "abrazaderas"
+  },
+  {
+    id: 2,
+    img: accesoriosPHiloDeGuardia,
+    title: "accesorios para hilo de guardia"
+  },
+  {
+    id: 3,
+    img: aisladoresDePorcelana,
+    title: "aisladores de porcelana"
+  },
+  {
+    id: 4,
+    img: aisladoresPolimericos,
+    title: "aisladores polimericos"
+  },
+  {
+    id: 5,
+    img: anclajes,
+    title: "anclajes"
+  },
+  {
+    id: 6,
+    img: arandelas,
+    title: "arandelas"
+  },
+  {
+    id: 7,
+    img: atadurasYAmarres,
+    title: "ataduras y amarres"
+  },
+  {
+    id: 8,
+    img: brazos,
+    title: "brazos"
+  },
+  {
+    id: 9,
+    img: bulones,
+    title: "bulones"
+  },
+  {
+    id: 10,
+    img: cables,
+    title: "cables"
+  },
+  {
+    id: 11,
+    img: chapas,
+    title: "chapas"
+  },
+  {
+    id: 12,
+    img: elementosDeCadena,
+    title: "elementos de cadena"
+  },
+  {
+    id: 13,
+    img: guardacabos,
+    title: "guardacabos"
+  },
+  {
+    id: 14,
+    img: jabalinas,
+    title: "jabalinas"
+  },
+  {
+    id: 15,
+    img: mensulasYMorsas,
+    title: "mensulas y morsas"
+  },
+  {
+    id: 16,
+    img: morcetosConectoresYGrampas,
+    title: "morcetos, conectores y grampas"
+  },
+  {
+    id: 17,
+    img: ojales,
+    title: "ojales"
+  },
+  {
+    id: 18,
+    img: pernos,
+    title: "pernos"
+  },
+  {
+    id: 19,
+    img: proteccionesElectricas,
+    title: "protecciones electricas"
+  },
+  {
+    id: 20,
+    img: seccionadores,
+    title: "seccionadores"
+  },
+  {
+    id: 21,
+    img: tensores,
+    title: "tensores"
+  },
+  {
+    id: 22,
+    img: tillas,
+    title: "tillas"
+  },
+  {
+    id: 23,
+    img: varios,
+    title: "varios"
+  },
+  {
+    id: 24,
+    img: yugos,
+    title: "yugos"
+  },
+]
+
+export const instrumentosT = [
+  {
+    id: 1,
+    img: buscapoloInductivo,
+    title: "buscapolo inductivo"
+  },
+  {
+    id: 2,
+    img: buscapolo,
+    title: "buscapolo"
+  },
+  {
+    id: 3,
+    img: multimetroTwo,
+    title: "multimetro"
+  },
+  {
+    id: 4,
+    img: multimetro,
+    title: "multimetro"
+  },
+  {
+    id: 5,
+    img: pinzaAmperometrica,
+    title: "pinza amperometrica"
+  },
+  {
+    id: 6,
+    img: puntaPrueba,
+    title: "punta de prueba"
+  },
+]
+
+export const aereoT = [
+  {
+    id: 1,
+    img: pkd14,
+    title: "pkd-14"
+  },
+  {
+    id: 2,
+    img: pkd16,
+    title: "pkd-16"
+  },
+  {
+    id: 3,
+    img: pkd31,
+    title: "pkd-31"
+  },
+  {
+    id: 4,
+    img: pkd20,
+    title: "pkd-20"
+  },
+  {
+    id: 5,
+    img: pkr20,
+    title: "pkr-20"
+  },
+  {
+    id: 6,
+    img: pks10cf,
+    title: "pks-10 cf"
+  },
+  {
+    id: 7,
+    img: preensambladoTwo,
+    title: "preensamblado"
+  },
+] 
