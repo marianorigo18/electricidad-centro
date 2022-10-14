@@ -105,6 +105,15 @@
 .product__title:hover{
     transform: scale(1.05);
 }
+.title__pages{
+    transition: .3s;
+    font-size: 28px;
+    padding-top: 40px;
+    font-weight: 100;
+    padding-left: 25px;
+    text-transform: uppercase;
+    color: #838383;
+}
 @media(max-width: 1100px){
     .topic__container{
         grid-auto-rows: 320px;

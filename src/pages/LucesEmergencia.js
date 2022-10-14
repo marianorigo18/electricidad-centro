@@ -1,6 +1,6 @@
 import React from "react";
 
-const LucesEmergencia = ({topic}) => {
+const LucesEmergencia = ({topic, emergenciaT}) => {
   return (
     <div className="layout">
       <div className="topic__container">
@@ -16,6 +16,14 @@ const LucesEmergencia = ({topic}) => {
           <h2 className="title">{topic[8].title}</h2>
           <p className="categories">{topic[8].categories}</p>
         </div>
+      </div>
+      <div className="products">
+        {emergenciaT.map((product) => (
+          <div className="product__card">
+            <img className="product__img" src={product.img} alt={product.title}/>
+              <p className="product__title">{product.title}</p>
+          </div>
+        ))}
       </div>
     </div>
   );

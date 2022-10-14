@@ -15,7 +15,7 @@ import LucesEmergencia from "./pages/LucesEmergencia";
 import Herramientas from "./pages/Herramientas";
 import Morceteria from "./pages/Morceteria";
 
-import {logos, topic, iluminacionT, normalizadosT, instrumentosT, aereoT} from './exports/data'
+import {logos, topic, iluminacionT, normalizadosT, instrumentosT, aereoT, emergenciaT, armadosT, armadosSica, armadosJeluz, armadosXx1, armadosXxii, armadosBauhaus, herramientasT} from './exports/data'
 
 class App extends Component {
 
@@ -37,9 +37,9 @@ class App extends Component {
             <Route path="/normalizados" element={<Normalizados topic={topic} normalizadosT={normalizadosT}/>} />
             <Route path="/instrumentos-de-medicion"element={<Instrumentos topic={topic} instrumentosT={instrumentosT}/>}/>
             <Route path="/linea-aerea" element={<LineaAerea topic={topic} aereoT={aereoT}/>} />
-            <Route path="/conjuntos-armados" element={<ConjuntosArmados topic={topic}/>} />
-            <Route path="/luces-emergencia" element={<LucesEmergencia topic={topic}/>} />
-            <Route path="/herramientas" element={<Herramientas topic={topic}/>} />
+            <Route path="/conjuntos-armados" element={<ConjuntosArmados topic={topic} armadosT={armadosT} armadosSica={armadosSica} armadosJeluz={armadosJeluz} armadosXx1={armadosXx1} armadosXxii={armadosXxii} armadosBauhaus={armadosBauhaus}/>} />
+            <Route path="/luces-emergencia" element={<LucesEmergencia topic={topic} emergenciaT={emergenciaT}/>} />
+            <Route path="/herramientas" element={<Herramientas topic={topic} herramientasT={herramientasT}/>} />
             <Route path="/morceteria" element={<Morceteria topic={topic}/>} />
           </Routes>
       </BrowserRouter>

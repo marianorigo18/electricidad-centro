@@ -12,11 +12,6 @@ class Navbar extends Component {
         <section className="menu__container">
           <Logo logos={logos} />
           <ul className="menu__links">
-            <li className="menu__item">
-              <Link to="/" className="menu__link">
-                INICIO
-              </Link>
-            </li>
 
             <li className="menu__item menu__item--show">
               <Link to="/" className="menu__link">
