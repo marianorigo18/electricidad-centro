@@ -15,7 +15,7 @@ import LucesEmergencia from "./pages/LucesEmergencia";
 import Herramientas from "./pages/Herramientas";
 import Morceteria from "./pages/Morceteria";
 
-import {logos, topic, iluminacionT, normalizadosT, instrumentosT, aereoT, emergenciaT, armadosT, armadosSica, armadosJeluz, armadosXx1, armadosXxii, armadosBauhaus, herramientasT} from './exports/data'
+import {logos, topic, iluminacionT, normalizadosT, instrumentosT, aereoT, emergenciaT, armadosT, armadosSica, armadosJeluz, armadosXx1, armadosXxii, armadosBauhaus, herramientasT, morceteriaT} from './exports/data'
 
 class App extends Component {
 
@@ -40,7 +40,7 @@ class App extends Component {
             <Route path="/conjuntos-armados" element={<ConjuntosArmados topic={topic} armadosT={armadosT} armadosSica={armadosSica} armadosJeluz={armadosJeluz} armadosXx1={armadosXx1} armadosXxii={armadosXxii} armadosBauhaus={armadosBauhaus}/>} />
             <Route path="/luces-emergencia" element={<LucesEmergencia topic={topic} emergenciaT={emergenciaT}/>} />
             <Route path="/herramientas" element={<Herramientas topic={topic} herramientasT={herramientasT}/>} />
-            <Route path="/morceteria" element={<Morceteria topic={topic}/>} />
+            <Route path="/morceteria" element={<Morceteria topic={topic} morceteriaT={morceteriaT}/>} />
           </Routes>
       </BrowserRouter>
     );

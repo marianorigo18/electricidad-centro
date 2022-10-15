@@ -1,6 +1,6 @@
 import React from "react";
 
-const Morceteria = ({topic}) => {
+const Morceteria = ({topic, morceteriaT}) => {
   return (
     <div className="layout">
       <div className="topic__container">
@@ -16,6 +16,14 @@ const Morceteria = ({topic}) => {
           <h2 className="title">{topic[10].title}</h2>
           <p className="categories">{topic[10].categories}</p>
         </div>
+      </div>
+      <div className="products">
+        {morceteriaT.map((product) => (
+          <div className="product__card">
+            <img className="product__img" src={product.img} alt={product.title}/>
+              <p className="product__title">{product.title}</p>
+          </div>
+        ))}
       </div>
     </div>
   );

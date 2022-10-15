@@ -170,7 +170,22 @@ import ly120 from "../assets/herramientas/lct/cobre/ly-120.jpg"
   import ly04wf from "../assets/herramientas/lct/tubular/ly-04wf.jpg"
   import ly16wf from "../assets/herramientas/lct/tubular/ly-16wf.jpg"
   import ly35wf from "../assets/herramientas/lct/tubular/ly-35wf.jpg"
-
+//Morceteria
+import conectorDienteTipoPeine from "../assets/morceteria/conector-diente-tipo-peine.jpg"
+import conectorPat from "../assets/morceteria/conector-pat.jpg"
+import grampaFijacion3Bulones from "../assets/morceteria/grampa-fijacion-3-bulones.jpg"
+import grampaFijacionMn200 from "../assets/morceteria/grampa-fijacion-mn200.jpg"
+import grampaPrensacable from "../assets/morceteria/grampa-prensacables.jpg"
+import morceto2Bulones from "../assets/morceteria/morceto-2-bulones.jpg"
+import morceto3Bulones from "../assets/morceteria/morceto-3-bulones.jpg"
+import morcetoBifilarParaleloGpa1Gpb1 from "../assets/morceteria/morceto-bifilar-paralelo-gpa1-gpb1.jpg"
+import morcetoBifilarParaleloGpa2Gpa3Gpa4 from "../assets/morceteria/morceto-bifilar-paralelo-gpa2-gpa3-gpa4.jpg"
+import morcetoBifilarParaleloGpb2Gpb3Gpb4 from "../assets/morceteria/morceto-bifilar-paralelo-gpa2-gpa3-gpa4.jpg"
+import morcetoBifilarParaleloMpa1CuerpoRoscado from "../assets/morceteria/morceto-bifilar-paralelo-mpa1-cuerpo-roscado.jpg"
+import morcetoBifilarParaleloMpa2CuerpoRoscado from "../assets/morceteria/morceto-bifilar-paralelo-mpa2-cuerpo-roscado.jpg"
+import morcetoBifilarParaleloMpb1CuerpoRoscado from "../assets/morceteria/morceto-bifilar-paralelo-mpb1-cuerpo-roscado.jpg"
+import morcetoBifilarParaleloMpb2CuerpoRoscado from "../assets/morceteria/morceto-bifilar-paralelo-mpb2-cuerpo-roscado.jpg"
+//import morcetoBifilarBimetalicoBronceEstañado2Bulones from "../assets/morseteria/morseto-bifilar-bimetalico-bronce-estanado-2-bulones.jpg"
 
 export const logos = {id: 1, img: logo, alt: "logo de electricidad centro"}
 
@@ -1012,4 +1027,77 @@ export const herramientasT = [
       }
     ]
   }
+]
+
+export const morceteriaT = [
+  {
+    id: 1,
+    img: conectorDienteTipoPeine,
+    title: "conector diente tipo peine"
+  },
+  {
+    id: 2,
+    img: conectorPat,
+    title: "conector pat"
+  },
+  {
+    id: 3,
+    img: grampaFijacion3Bulones,
+    title: "grampa fijacion 3 bulones"
+  },
+  {
+    id: 4,
+    img: grampaFijacionMn200,
+    title: "grampa fijacion mn200"
+  },
+  {
+    id: 5,
+    img: grampaPrensacable,
+    title: "grampa prensacable"
+  },
+  {
+    id: 6,
+    img: morceto2Bulones,
+    title: "morceto 2 bulones"
+  },
+  {
+    id: 7,
+    img: morceto3Bulones,
+    title: "morceto 3 bulones"
+  },
+  {
+    id: 8,
+    img: morcetoBifilarParaleloGpa1Gpb1,
+    title: "morceto bifilar paralelo gpa1 gpb1"
+  },
+  {
+    id: 9,
+    img: morcetoBifilarParaleloGpa2Gpa3Gpa4,
+    title: "morceto bifilar paralelo gpa2 gpa3 gpa4"
+  },
+  {
+    id: 10,
+    img: morcetoBifilarParaleloGpb2Gpb3Gpb4,
+    title: "morceto bifilar paralelo gpb2 gpb3 gpb4"
+  },
+  {
+    id: 11,
+    img: morcetoBifilarParaleloMpa1CuerpoRoscado,
+    title: "morceto bifilar paralelo mpa1 cuerpo roscado"
+  },
+  {
+    id: 12,
+    img: morcetoBifilarParaleloMpa2CuerpoRoscado,
+    title: "morceto bifilar paralelo mpa2 cuerpo roscado"
+  },
+  {
+    id: 13,
+    img: morcetoBifilarParaleloMpb1CuerpoRoscado,
+    title: "morceto bifilar paralelo mpb1 cuerpo roscado"
+  },
+  {
+    id: 14,
+    img: morcetoBifilarParaleloMpb2CuerpoRoscado,
+    title: "morceto bifilar paralelo mpb2 cuerpo roscado"
+  },
 ]

@@ -38,7 +38,7 @@ const Herramientas = ({topic, herramientasT}) => {
         ))}
       </div>
       <div>
-        <h2 className="title__pages">manual</h2>
+        <h2 className="title__pages">manuales</h2>
       </div>
       <div className="products">
         {herramientasT[0].stanley.map((product) => (
