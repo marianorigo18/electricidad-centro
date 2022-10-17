@@ -5,7 +5,6 @@ import "./Navbar.css";
 import React from 'react'
 
 const Navbar = () => {
-  console.log(logos)
   return (
     <nav className="menu"> 
         <section className="menu__container">
