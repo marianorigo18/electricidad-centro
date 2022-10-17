@@ -20,7 +20,7 @@ const Navbar = () => {
               <ul className="menu__nesting">
                 <li className="menu__inside">
                   <Link
-                    to="/industria"
+                    to="/electricidad-centro/industria"
                     className="menu__link menu__link--inside"
                   >
                     Industria
@@ -28,7 +28,7 @@ const Navbar = () => {
                 </li>
                 <li className="menu__inside">
                   <Link
-                    to="/iluminacion"
+                    to="/electricidad-centro/iluminacion"
                     className="menu__link menu__link--inside"
                   >
                     Iluminacion
@@ -36,7 +36,7 @@ const Navbar = () => {
                 </li>
                 <li className="menu__inside">
                   <Link
-                    to="/conductores"
+                    to="/electricidad-centro/conductores"
                     className="menu__link menu__link--inside"
                   >
                     Conductores
@@ -44,7 +44,7 @@ const Navbar = () => {
                 </li>
                 <li className="menu__inside">
                   <Link
-                    to="/terminales"
+                    to="/electricidad-centro/terminales"
                     className="menu__link menu__link--inside"
                   >
                     Terminales
@@ -52,7 +52,7 @@ const Navbar = () => {
                 </li>
                 <li className="menu__inside">
                   <Link
-                    to="/normalizados"
+                    to="/electricidad-centro/normalizados"
                     className="menu__link menu__link--inside"
                   >
                     Normalizados
@@ -60,7 +60,7 @@ const Navbar = () => {
                 </li>
                 <li className="menu__inside">
                   <Link
-                    to="/instrumentos-de-medicion"
+                    to="/electricidad-centro/instrumentos-de-medicion"
                     className="menu__link menu__link--inside"
                   >
                     Instrumentos de Medicion
@@ -68,7 +68,7 @@ const Navbar = () => {
                 </li>
                 <li className="menu__inside">
                   <Link
-                    to="/linea-aerea"
+                    to="/electricidad-centro/linea-aerea"
                     className="menu__link menu__link--inside"
                   >
                     Linea Aerea
@@ -76,7 +76,7 @@ const Navbar = () => {
                 </li>
                 <li className="menu__inside">
                   <Link
-                    to="/conjuntos-armados"
+                    to="/electricidad-centro/conjuntos-armados"
                     className="menu__link menu__link--inside"
                   >
                     Conjuntos Armados
@@ -84,7 +84,7 @@ const Navbar = () => {
                 </li>
                 <li className="menu__inside">
                   <Link
-                    to="/luces-emergencia"
+                    to="/electricidad-centro/luces-emergencia"
                     className="menu__link menu__link--inside"
                   >
                     Luces de Emergencia
@@ -92,7 +92,7 @@ const Navbar = () => {
                 </li>
                 <li className="menu__inside">
                   <Link
-                    to="/herramientas"
+                    to="/electricidad-centro/herramientas"
                     className="menu__link menu__link--inside"
                   >
                     Herramientas
@@ -100,7 +100,7 @@ const Navbar = () => {
                 </li>
                 <li className="menu__inside">
                   <Link
-                    to="/morceteria"
+                    to="/electricidad-centro/morceteria"
                     className="menu__link menu__link--inside"
                   >
                     Morceteria
@@ -114,37 +114,37 @@ const Navbar = () => {
           </div>
         </section>
         <div className="anuncio">
-          <Link to="/industria" className="anuncio__link">
+          <Link to="/electricidad-centro/industria" className="anuncio__link">
             industria
           </Link>
-          <Link to="/iluminacion" className="anuncio__link">
+          <Link to="/electricidad-centro/iluminacion" className="anuncio__link">
             iluminacion
           </Link>
-          <Link to="/conductores" className="anuncio__link">
+          <Link to="/electricidad-centro/conductores" className="anuncio__link">
             conductores
           </Link>
-          <Link to="/terminales" className="anuncio__link">
+          <Link to="/electricidad-centro/terminales" className="anuncio__link">
             terminales
           </Link>
-          <Link to="/normalizados" className="anuncio__link">
+          <Link to="/electricidad-centro/normalizados" className="anuncio__link">
             normalizados
           </Link>
-          <Link to="/instrumentos-de-medicion" className="anuncio__link">
+          <Link to="/electricidad-centro/instrumentos-de-medicion" className="anuncio__link">
             medicion
           </Link>
-          <Link to="/linea-aerea" className="anuncio__link">
+          <Link to="/electricidad-centro/linea-aerea" className="anuncio__link">
             aereo
           </Link>
-          <Link to="/conjuntos-armados" className="anuncio__link">
+          <Link to="/electricidad-centro/conjuntos-armados" className="anuncio__link">
             armados
           </Link>
-          <Link to="/luces-emergencia" className="anuncio__link">
+          <Link to="/electricidad-centro/luces-emergencia" className="anuncio__link">
             emergencia
           </Link>
-          <Link to="/herramientas" className="anuncio__link">
+          <Link to="/electricidad-centro/herramientas" className="anuncio__link">
             herramientas
           </Link>
-          <Link to="/morceteria" className="anuncio__link">
+          <Link to="/electricidad-centro/morceteria" className="anuncio__link">
             morceteria
           </Link>
         </div>
