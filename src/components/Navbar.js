@@ -6,7 +6,7 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <nav className="menu">
+    <nav className="menu"> 
         <section className="menu__container">
           <Link to="/">
             <img src={logos.img} alt={logos.alt}></img>
