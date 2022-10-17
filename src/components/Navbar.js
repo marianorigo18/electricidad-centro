@@ -8,12 +8,12 @@ const Navbar = () => {
   return (
     <nav className="menu"> 
         <section className="menu__container">
-          <Link to="/">
+          <Link to="/electricidad-centro">
             <img src={logos[0].img} alt={logos[0].alt}></img>
           </Link>
           <ul className="menu__links">
             <li className="menu__item menu__item--show">
-              <Link to="/" className="menu__link">
+              <Link to="/electricidad-centro" className="menu__link">
                 Categorias
                 <i class="bx bx-chevron-down menu__arrow"></i>
               </Link>

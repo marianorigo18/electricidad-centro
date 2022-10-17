@@ -29,7 +29,7 @@ class App extends Component {
       <BrowserRouter>
           <Navbar logos={this.state.logos} toppic={topic} logo={logos}/>
           <Routes>
-            <Route path="/" element={<Home topicSection={this.state.topicSection} toppic={topic}/>}/>
+            <Route path="/electricidad-centro" element={<Home topicSection={this.state.topicSection} toppic={topic}/>}/>
             <Route path="/industria" element={<Industria topic={topic}/>} />
             <Route path="/iluminacion" element={<Iluminacion iluminacionT={iluminacionT}/>} />
             <Route path="/conductores" element={<Conductores topic={topic}/>} />
