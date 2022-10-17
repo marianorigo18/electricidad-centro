@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/electricidad-centro/static/css/main.8924b3aa.css",
-    "main.js": "/electricidad-centro/static/js/main.e4255bf4.js",
+    "main.css": "/electricidad-centro/static/css/main.4800f59e.css",
+    "main.js": "/electricidad-centro/static/js/main.126e6b21.js",
     "static/media/instrumentos.jpg": "/electricidad-centro/static/media/instrumentos.6f1a6b5ebf9af3b46295.jpg",
     "static/media/iluminacion.jpg": "/electricidad-centro/static/media/iluminacion.5ae514176680710ca95f.jpg",
     "static/media/conjuntos.jpg": "/electricidad-centro/static/media/conjuntos.e02aec68fa993d375a8c.jpg",
@@ -131,11 +131,11 @@
     "static/media/arte-sham-1p-cuadruple.jpg": "/electricidad-centro/static/media/arte-sham-1p-cuadruple.b5b1e14e95a8f20d1252.jpg",
     "static/media/arte-alum-1p-cuadruple.jpg": "/electricidad-centro/static/media/arte-alum-1p-cuadruple.f795b71a140226b457a3.jpg",
     "index.html": "/electricidad-centro/index.html",
-    "main.8924b3aa.css.map": "/electricidad-centro/static/css/main.8924b3aa.css.map",
-    "main.e4255bf4.js.map": "/electricidad-centro/static/js/main.e4255bf4.js.map"
+    "main.4800f59e.css.map": "/electricidad-centro/static/css/main.4800f59e.css.map",
+    "main.126e6b21.js.map": "/electricidad-centro/static/js/main.126e6b21.js.map"
   },
   "entrypoints": [
-    "static/css/main.8924b3aa.css",
-    "static/js/main.e4255bf4.js"
+    "static/css/main.4800f59e.css",
+    "static/js/main.126e6b21.js"
   ]
 }
