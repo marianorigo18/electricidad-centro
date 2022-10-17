@@ -24,7 +24,7 @@ const Iluminacion = () => {
               <p className="product__title">{product.title}</p>
           </div>
         ))}
-      </div>
+      </div> 
     </div>
   );
 };
