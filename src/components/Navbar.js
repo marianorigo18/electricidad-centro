@@ -5,11 +5,12 @@ import "./Navbar.css";
 import React from 'react'
 
 const Navbar = () => {
+  console.log(logos)
   return (
     <nav className="menu"> 
         <section className="menu__container">
           <Link to="/">
-            <img src={logos.img} alt={logos.alt}></img>
+            <img src={logos[0].img} alt={logos[0].alt}></img>
           </Link>
           <ul className="menu__links">
             <li className="menu__item menu__item--show">
