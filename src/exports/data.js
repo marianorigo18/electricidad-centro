@@ -195,8 +195,8 @@ export const topic = [
     img: industria,
     phrase: "optimiza tu industria con los mejores componentes",
     title: "linea industrial",
-    categories:
-      "contactores, motores, variadores, relevos, arranque suave, termomagneticas, diferenciales, etc.",
+    categories: "contactores, motores, variadores, relevos, arranque suave, termomagneticas, diferenciales, etc.",
+    link: "/electricidad-centro/industria"  
   },
   {
     id: 2,
@@ -204,22 +204,23 @@ export const topic = [
     phrase: "encontra todo para iluminar tu hogar",
     title: "iluminacion",
     categories: "lamparas, faroles, bidireccionales, plafones, colgantes, etc.",
+    link: "/electricidad-centro/iluminacion"  
   },
   {
     id: 3,
     img: conductores,
     phrase: "conecta",
     title: "conductores",
-    categories:
-      "taller, subterraneo, retenax, preensamblado, utp, mallado, soldadura, cu-desnudo, unipolares, etc.",
+    categories:"taller, subterraneo, retenax, preensamblado, utp, mallado, soldadura, cu-desnudo, unipolares, etc.",
+    link: "/electricidad-centro/conductores"  
   },
   {
     id: 4,
     img: terminales,
     phrase: "terminales de compresion",
     title: "terminales",
-    categories:
-      "cu-estañado, punteras tubulares, preaislado-ojal, bimetalico-forjado, bimetalico, aluminio, etc.",
+    categories: "cu-estañado, punteras tubulares, preaislado-ojal, bimetalico-forjado, bimetalico, aluminio, etc.",
+    link: "/electricidad-centro/terminales"
   },
   {
     id: 5,
@@ -227,6 +228,7 @@ export const topic = [
     phrase: "materiles electricos de norma",
     title: "materiales normalizados",
     categories: "tillas, bulones, tensores, aisladores, etc.",
+    link: "/electricidad-centro/normalizados"
   },
   {
     id: 6,
@@ -234,22 +236,23 @@ export const topic = [
     phrase: "testea todas tu conecciones",
     title: "instrumentos de medicion",
     categories: "multimetros, pinzas amperometricas, puntas de prueba, etc.",
+    link: "/electricidad-centro/instrumentos-de-medicion"
   },
   {
     id: 7,
     img: aereo,
     phrase: "desplasa tus conecciones por los aires",
     title: "linea aerea",
-    categories:
-      "tensores, perchas, derivadores, suspenciones, abrazadare, cables, etc.",
+    categories: "tensores, perchas, derivadores, suspenciones, abrazadare, cables, etc.",
+    link: "/electricidad-centro/linea-aerea"
   },
   {
     id: 8,
     img: conjuntos,
     phrase: "descubri toda las lineas de conjuntos armados que temos para vos.",
     title: "conjuntos armados",
-    categories:
-      "cambre bauhaus, cambre xxii, cambre xxi, jeluz verona, sica life, etc.",
+    categories: "cambre bauhaus, cambre xxii, cambre xxi, jeluz verona, sica life, etc.",
+    link: "/electricidad-centro/conjuntos-armados"
   },
   {
     id: 9,
@@ -257,14 +260,15 @@ export const topic = [
     phrase: "no te quedaras sin iluminacion",
     title: "luces de emergencia",
     categories: "lamparas autonomas, luces de emergencia, etc.",
+    link: "/electricidad-centro/luces-emergencia"
   },
   {
     id: 10,
     img: herramientas,
     phrase: "herramientas de seleccion",
     title: "herramientas",
-    categories:
-      "pinzas, alicates, prensaterminales, cinta metrica, destornilladores, etc.",
+    categories: "pinzas, alicates, prensaterminales, cinta metrica, destornilladores, etc.",
+    link: "/electricidad-centro/herramientas"
   },
   {
     id: 11,
@@ -272,6 +276,7 @@ export const topic = [
     phrase: "deriva tus conecciones",
     title: "morceteria",
     categories: "morcetos, derivadores, etc.",
+    link: "/electricidad-centro/morceteria"
   },
 ];
 

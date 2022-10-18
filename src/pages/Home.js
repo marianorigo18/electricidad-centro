@@ -14,7 +14,7 @@ const Home = () => {
             <p className="phrase">{topic.phrase}</p>
             <h2 className="title">{topic.title}</h2>
             <p className="categories">{topic.categories}</p>
-            <Link className="topic__link">
+            <Link to={topic.link} className="topic__link">
               <button className="topic__button">Ver Mas</button>
             </Link>
           </div>
