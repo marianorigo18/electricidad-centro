@@ -17,14 +17,13 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background-color: #F5F5F5;
+    background-color: #FFFFFF;
     font-family: 'Nunito', sans-serif;
 }
 .menu{
     background-color: #FFFFFF;
     color: #000;
     height: 100px;
-    margin-top: 20px;
 }
 .menu__container{
     display: flex;
@@ -35,7 +34,11 @@ body{
     height: 100%;
     margin: 0 auto;
 }
+.container__logo{
+    width: 250px;
+}
 .menu__container a img{
+    width: 100%;
     transition: .3s;
 }
 .menu__container a img:hover{
@@ -111,6 +114,7 @@ body{
     display: block;
 }
 .anuncio{
+    display: flex;
     overflow-x: scroll;
     margin: auto;
     padding: 5px;
@@ -119,23 +123,44 @@ body{
 .anuncio::-webkit-scrollbar{
     height: 0px;
 }
+.anuncio__bubble{
+    width: 50px;
+    height: 50px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    padding: 8px;
+}
+.anuncio__bubble img{
+    width: 100%;
+}
 .anuncio__link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 5px 10px;
     text-transform: uppercase;
-    font-size: 12px;
-    text-decoration: underline;
+    font-size: 9px;
     color: #7B7D7D;
     transition: .3s;
 }
 .anuncio__link:hover{
     color: #088A08;
-    font-size: 14px;
 }
-
-@media(max-width: 800px){
-    .menu__hamburguer{
-        display: flex;
+.anuncio__paragraph{
+    padding-top: 5px;
+}
+@media(min-width:900px) {
+    .anuncio{
+        justify-content: center;
     }
+}
+@media(max-width: 800px){
+    .menu{
+        height: 80px;
+    }
+    /*.menu__hamburguer{
+        display: flex;
+    }*/
 
     .menu__item{
         --clip:0;

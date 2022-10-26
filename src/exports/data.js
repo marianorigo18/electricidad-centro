@@ -1,5 +1,5 @@
 //Logo
-import logo from "../assets/logo/logo-ele-centro-three.png";
+import logo from "../assets/logo/logo-ele-centro-three.jpg";
 //Toppics
 import industria from "../assets/topics/industria.jpg";
 import iluminacion from "../assets/topics/iluminacion.jpg";
@@ -186,6 +186,19 @@ import morcetoBifilarParaleloMpa2CuerpoRoscado from "../assets/morceteria/morcet
 import morcetoBifilarParaleloMpb1CuerpoRoscado from "../assets/morceteria/morceto-bifilar-paralelo-mpb1-cuerpo-roscado.jpg";
 import morcetoBifilarParaleloMpb2CuerpoRoscado from "../assets/morceteria/morceto-bifilar-paralelo-mpb2-cuerpo-roscado.jpg";
 //import morcetoBifilarBimetalicoBronceEstañado2Bulones from "../assets/morseteria/morseto-bifilar-bimetalico-bronce-estanado-2-bulones.jpg"
+/* Bubble images*/
+import aereoo from "../assets/bubble/aereo.jpg"
+import armado from "../assets/bubble/armado.jpg"
+import cable from "../assets/bubble/cable.jpg"
+import emergenciaa from "../assets/bubble/emergencia.jpg"
+import herramienta from "../assets/bubble/herramienta.jpg"
+import lampara from "../assets/bubble/lampara.jpg"
+import medicion from "../assets/bubble/medicion.jpg"
+import morceto from "../assets/bubble/morceto.jpg"
+import motor from "../assets/bubble/motor.jpg"
+import normalizado from "../assets/bubble/normalizados.jpg"
+import terminal from "../assets/bubble/terminal.jpg"
+
 
 export const logos = [{ id: 1, img: logo, alt: "logo de electricidad centro" }];
 
@@ -1107,3 +1120,72 @@ export const morceteriaT = [
     title: "morceto bifilar paralelo mpb2 cuerpo roscado",
   },
 ];
+
+export const bubble = [
+  {
+    id:1,
+    img: motor,
+    title: "industria",
+    link: "/electricidad-centro/industria"
+  },
+  {
+    id:2,
+    img: lampara,
+    title: "iluminacion",
+    link: "/electricidad-centro/iluminacion"
+  },
+  {
+    id:3,
+    img: cable,
+    title: "cables",
+    link: "/electricidad-centro/conductores"
+  },
+  {
+    id:8,
+    img: armado,
+    title: "puntos y toma",
+    link: "/electricidad-centro/conjuntos-armados"
+  },
+  {
+    id:10,
+    img: herramienta,
+    title: "herramientas",
+    link: "/electricidad-centro/herramientas"
+  },
+  {
+    id:4,
+    img: terminal,
+    title: "terminales",
+    link: "/electricidad-centro/terminales"
+  },
+  {
+    id:5,
+    img: normalizado,
+    title: "normalizados",
+    link: "/electricidad-centro/normalizados"
+  },
+  {
+    id:6,
+    img: medicion,
+    title: "testing",
+    link: "/electricidad-centro/instrumentos-de-medicion"
+  },
+  {
+    id:7,
+    img: aereoo,
+    title: "aereo",
+    link: "/electricidad-centro/linea-aerea"
+  },
+  {
+    id:9,
+    img: emergenciaa,
+    title: "emergencia",
+    link: "/electricidad-centro/luces-emergencia"
+  },
+  {
+    id:12,
+    img: morceto,
+    title: "morcetos",
+    link: "/electricidad-centro/morceteria"
+  },
+]
