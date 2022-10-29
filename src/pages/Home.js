@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { topic } from "../exports/data";
+import { topic, iluminacionT } from "../exports/data";
 const LayoutHome = styled.div`
   max-width: 1000px;
   width: 100%;
@@ -53,53 +53,108 @@ const InfoContSingleImage = styled.div`
   height: 100%;
   background-color: lightgreen;
   border: 1px solid black;
-`
+`;
 const InfoContTitle = styled.div`
-display: flex;
-justify-content: center;
-align-items: center;
-background-color: yellow;
-width: 100%;
-height: 50%;
-`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: yellow;
+  width: 100%;
+  height: 50%;
+  font-size: 40px;
+`;
 const Home = () => {
   return (
     <LayoutHome>
+      <h1>Helo World</h1>
       <LayoutContainer>
         <GridItem>
           <InfoContainer>
             <InfoContImages>
               <InfoContSingleImage>
-              <Img src={topic[4].img} alt={topic[4].title}></Img>
+                <Img src={iluminacionT[4].img} alt={topic[4].title}></Img>
               </InfoContSingleImage>
               <InfoContSingleImage>
-              <Img src={topic[5].img} alt={topic[5].title}></Img>
+                <Img src={iluminacionT[2].img} alt={topic[5].title}></Img>
               </InfoContSingleImage>
             </InfoContImages>
-            <InfoContTitle><p>BIDIRECCIONAL</p></InfoContTitle>
+            <InfoContTitle>
+              <p>BIDIRECCIONAL</p>
+            </InfoContTitle>
+          </InfoContainer>
+        </GridItem>
+
+        <GridItem>
+          <ImageContainer>
+            <Img src={topic[0].img} alt={topic[0].title}></Img>
+          </ImageContainer>
+        </GridItem>
+
+        <GridItem>
+          <ImageContainer>
+            <Img src={topic[0].img} alt={topic[0].title}></Img>
+          </ImageContainer>
+        </GridItem>
+
+        <GridItem>
+          <InfoContainer>
+            <InfoContImages>
+              <InfoContSingleImage>
+                <Img src={iluminacionT[1].img} alt={topic[4].title}></Img>
+              </InfoContSingleImage>
+              <InfoContSingleImage>
+                <Img src={iluminacionT[4].img} alt={topic[5].title}></Img>
+              </InfoContSingleImage>
+            </InfoContImages>
+            <InfoContTitle>
+              <p>BIDIRECCIONAL</p>
+            </InfoContTitle>
           </InfoContainer>
         </GridItem>
         <GridItem>
-          <ImageContainer>
-            <Img src={topic[0].img} alt={topic[0].title}></Img>
-          </ImageContainer>
+          <InfoContainer>
+            <InfoContImages>
+              <InfoContSingleImage>
+                <Img src={iluminacionT[4].img} alt={topic[4].title}></Img>
+              </InfoContSingleImage>
+              <InfoContSingleImage>
+                <Img src={iluminacionT[2].img} alt={topic[5].title}></Img>
+              </InfoContSingleImage>
+            </InfoContImages>
+            <InfoContTitle>
+              <p>BIDIRECCIONAL</p>
+            </InfoContTitle>
+          </InfoContainer>
         </GridItem>
+
         <GridItem>
           <ImageContainer>
-            <Img src={topic[0].img} alt={topic[0].title}></Img>
+            <Img src={topic[3].img} alt={topic[0].title}></Img>
           </ImageContainer>
         </GridItem>
-        <GridItem>
-          <ImageContainer>hel</ImageContainer>
-        </GridItem>
-        <GridItem>
-          <ImageContainer>hello</ImageContainer>
-        </GridItem>
+
         <GridItem>
           <ImageContainer>
-            <Img src={topic[1].img} alt={topic[0].title}></Img>
+            <Img src={topic[4].img} alt={topic[0].title}></Img>
           </ImageContainer>
         </GridItem>
+
+        <GridItem>
+          <InfoContainer>
+            <InfoContImages>
+              <InfoContSingleImage>
+                <Img src={iluminacionT[4].img} alt={topic[4].title}></Img>
+              </InfoContSingleImage>
+              <InfoContSingleImage>
+                <Img src={iluminacionT[2].img} alt={topic[5].title}></Img>
+              </InfoContSingleImage>
+            </InfoContImages>
+            <InfoContTitle>
+              <p>BIDIRECCIONAL</p>
+            </InfoContTitle>
+          </InfoContainer>
+        </GridItem>
+
       </LayoutContainer>
     </LayoutHome>
   );

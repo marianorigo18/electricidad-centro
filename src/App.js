@@ -14,6 +14,7 @@ import ConjuntosArmados from "./pages/ConjuntosArmados";
 import LucesEmergencia from "./pages/LucesEmergencia";
 import Herramientas from "./pages/Herramientas";
 import Morceteria from "./pages/Morceteria";
+import Contact from "./pages/Contact";
 
 import {logos, topic, iluminacionT, normalizadosT, instrumentosT, aereoT, emergenciaT, armadosT, armadosSica, armadosJeluz, armadosXx1, armadosXxii, armadosBauhaus, herramientasT, morceteriaT} from './exports/data'
 
@@ -41,6 +42,7 @@ class App extends Component {
             <Route path="/electricidad-centro/luces-emergencia" element={<LucesEmergencia topic={topic} emergenciaT={emergenciaT}/>} />
             <Route path="/electricidad-centro/herramientas" element={<Herramientas topic={topic} herramientasT={herramientasT}/>} />
             <Route path="/electricidad-centro/morceteria" element={<Morceteria topic={topic} morceteriaT={morceteriaT}/>} />
+            <Route path="/electricidad-centro/contacto" element={<Contact/>}/>
           </Routes>
       </BrowserRouter>
     );
