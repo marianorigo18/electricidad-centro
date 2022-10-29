@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/electricidad-centro/static/css/main.4800f59e.css",
-    "main.js": "/electricidad-centro/static/js/main.3e52aaef.js",
+    "main.css": "/electricidad-centro/static/css/main.7b5b57b6.css",
+    "main.js": "/electricidad-centro/static/js/main.53388e9c.js",
     "static/media/instrumentos.jpg": "/electricidad-centro/static/media/instrumentos.6f1a6b5ebf9af3b46295.jpg",
     "static/media/iluminacion.jpg": "/electricidad-centro/static/media/iluminacion.5ae514176680710ca95f.jpg",
     "static/media/motores.jpg": "/electricidad-centro/static/media/motores.4f01803d7c1ab95c4024.jpg",
@@ -65,6 +65,7 @@
     "static/media/pkd20.jpg": "/electricidad-centro/static/media/pkd20.a9eaad95f9b289bddb2e.jpg",
     "static/media/bidireccionales.jpg": "/electricidad-centro/static/media/bidireccionales.6bf510bd0cb29e56d577.jpg",
     "static/media/buscapolo.jpg": "/electricidad-centro/static/media/buscapolo.e4265185d224540c4028.jpg",
+    "static/media/logo-ele-centro-three.jpg": "/electricidad-centro/static/media/logo-ele-centro-three.7942703c683bd29a757c.jpg",
     "static/media/macroled-emergencia-90-leds.jpg": "/electricidad-centro/static/media/macroled-emergencia-90-leds.17d7a3803f52a682bb48.jpg",
     "static/media/punta-prueba.jpg": "/electricidad-centro/static/media/punta-prueba.b64eda094272c36d1579.jpg",
     "static/media/plafones.jpg": "/electricidad-centro/static/media/plafones.a22dff53c6403d8fd294.jpg",
@@ -102,7 +103,6 @@
     "static/media/abrazaderas.jpg": "/electricidad-centro/static/media/abrazaderas.473ee5ee54a4c052f75f.jpg",
     "static/media/morceto-3-bulones.jpg": "/electricidad-centro/static/media/morceto-3-bulones.d54f7202c00ffe39006a.jpg",
     "static/media/morceto-2-bulones.jpg": "/electricidad-centro/static/media/morceto-2-bulones.49a2cea72ef76ab62891.jpg",
-    "static/media/logo-ele-centro-three.png": "/electricidad-centro/static/media/logo-ele-centro-three.696ec7e163e7d9299951.png",
     "static/media/anclajes.jpg": "/electricidad-centro/static/media/anclajes.74a3d2617c4867eec0aa.jpg",
     "static/media/buscapolo-inductivo.jpg": "/electricidad-centro/static/media/buscapolo-inductivo.e61f5ae576edbaebbe30.jpg",
     "static/media/jabalinas.jpg": "/electricidad-centro/static/media/jabalinas.33c66b40602b9830d8d7.jpg",
@@ -131,11 +131,11 @@
     "static/media/arte-sham-1p-cuadruple.jpg": "/electricidad-centro/static/media/arte-sham-1p-cuadruple.b5b1e14e95a8f20d1252.jpg",
     "static/media/arte-alum-1p-cuadruple.jpg": "/electricidad-centro/static/media/arte-alum-1p-cuadruple.f795b71a140226b457a3.jpg",
     "index.html": "/electricidad-centro/index.html",
-    "main.4800f59e.css.map": "/electricidad-centro/static/css/main.4800f59e.css.map",
-    "main.3e52aaef.js.map": "/electricidad-centro/static/js/main.3e52aaef.js.map"
+    "main.7b5b57b6.css.map": "/electricidad-centro/static/css/main.7b5b57b6.css.map",
+    "main.53388e9c.js.map": "/electricidad-centro/static/js/main.53388e9c.js.map"
   },
   "entrypoints": [
-    "static/css/main.4800f59e.css",
-    "static/js/main.3e52aaef.js"
+    "static/css/main.7b5b57b6.css",
+    "static/js/main.53388e9c.js"
   ]
 }
