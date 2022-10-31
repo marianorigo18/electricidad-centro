@@ -1,3 +1,4 @@
+import Footer from "../components/Footer";
 import { topic, iluminacionT } from "../exports/data";
 import "./Page.css";
 const Iluminacion = () => {
@@ -25,6 +26,7 @@ const Iluminacion = () => {
           </div>
         ))}
       </div> 
+      <Footer></Footer>
     </div>
   );
 };

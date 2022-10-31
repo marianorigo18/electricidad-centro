@@ -1,4 +1,5 @@
 import { Component } from "react";
+import Footer from "../components/Footer";
 import { topic, terminalesT } from "../exports/data";
 import "./Page.css";
 
@@ -36,6 +37,7 @@ class Terminales extends Component {
             </div>
           ))}
         </div>
+        <Footer></Footer>
       </div>
     );
   }

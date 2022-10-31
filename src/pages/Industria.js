@@ -2,6 +2,7 @@ import { topic, industriaT } from "../exports/data";
 import "./Page.css";
 
 import React from "react";
+import Footer from "../components/Footer";
 
 const Industria = () => {
   return (
@@ -32,6 +33,7 @@ const Industria = () => {
           </div>
         ))}
       </div>
+      <Footer></Footer>
     </div>
   );
 };

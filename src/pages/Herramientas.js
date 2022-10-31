@@ -1,3 +1,5 @@
+import Footer from "../components/Footer";
+
 const Herramientas = ({topic, herramientasT}) => {
   return (
     <div className="layout">
@@ -147,6 +149,7 @@ const Herramientas = ({topic, herramientasT}) => {
           </div>
         ))}
       </div>
+      <Footer></Footer>
     </div>
   );
 };

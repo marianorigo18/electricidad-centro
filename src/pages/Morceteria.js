@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../components/Footer";
 
 const Morceteria = ({topic, morceteriaT}) => {
   return (
@@ -25,6 +26,7 @@ const Morceteria = ({topic, morceteriaT}) => {
           </div>
         ))}
       </div>
+      <Footer></Footer>
     </div>
   );
 };

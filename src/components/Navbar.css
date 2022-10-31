@@ -31,12 +31,17 @@ body{
     justify-content: space-between;
     align-items: center;
     width: 90%;
-    max-width: 1000px;
+    max-width: 1700px;
     height: 100%;
     margin: 0 auto;
 }
 .container__logo{
     width: 250px;
+}
+@media(max-width: 480px){
+    .container__logo{
+        width: 180px;
+    }
 }
 .menu__container a img{
     width: 100%;

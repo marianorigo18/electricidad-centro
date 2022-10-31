@@ -1,6 +1,8 @@
 //Logo
 import logo from "../assets/logo/logo-ele-centro-three.jpg";
-//Toppics
+import soloLogo from "../assets/logo/solo-logo.jpg";
+import soloLogoPng from "../assets/logo/solo-logo-png.png"
+ //Toppics
 import industria from "../assets/topics/industria.jpg";
 import iluminacion from "../assets/topics/iluminacion.jpg";
 import conductores from "../assets/topics/conductoresfour.jpg";
@@ -187,20 +189,35 @@ import morcetoBifilarParaleloMpb1CuerpoRoscado from "../assets/morceteria/morcet
 import morcetoBifilarParaleloMpb2CuerpoRoscado from "../assets/morceteria/morceto-bifilar-paralelo-mpb2-cuerpo-roscado.jpg";
 //import morcetoBifilarBimetalicoBronceEstañado2Bulones from "../assets/morseteria/morseto-bifilar-bimetalico-bronce-estanado-2-bulones.jpg"
 /* Bubble images*/
-import aereoo from "../assets/bubble/aereo.jpg"
-import armado from "../assets/bubble/armado.jpg"
-import cable from "../assets/bubble/cable.jpg"
-import emergenciaa from "../assets/bubble/emergencia.jpg"
-import herramienta from "../assets/bubble/herramienta.jpg"
-import lampara from "../assets/bubble/lampara.jpg"
-import medicion from "../assets/bubble/medicion.jpg"
-import morceto from "../assets/bubble/morceto.jpg"
-import motor from "../assets/bubble/motor.jpg"
-import normalizado from "../assets/bubble/normalizados.jpg"
-import terminal from "../assets/bubble/terminal.jpg"
+import aereoo from "../assets/bubble/aereo.jpg";
+import armado from "../assets/bubble/armado.jpg";
+import cable from "../assets/bubble/cable.jpg";
+import emergenciaa from "../assets/bubble/emergencia.jpg";
+import herramienta from "../assets/bubble/herramienta.jpg";
+import lampara from "../assets/bubble/lampara.jpg";
+import medicion from "../assets/bubble/medicion.jpg";
+import morceto from "../assets/bubble/morceto.jpg";
+import motor from "../assets/bubble/motor.jpg";
+import normalizado from "../assets/bubble/normalizados.jpg";
+import terminal from "../assets/bubble/terminal.jpg";
 
-
-export const logos = [{ id: 1, img: logo, alt: "logo de electricidad centro" }];
+export const logos = [
+  {
+    id: 1,
+    img: logo,
+    alt: "logo de electricidad centro",
+  },
+  {
+    id: 2,
+    img: soloLogo,
+    alt: "logo de electricidad centro"
+  },
+  {
+    id: 3,
+    img: soloLogoPng,
+    alt: "logo de electricidad centro"
+  },
+];
 
 export const topic = [
   {
@@ -208,8 +225,9 @@ export const topic = [
     img: industria,
     phrase: "optimiza tu industria con los mejores componentes",
     title: "linea industrial",
-    categories: "contactores, motores, variadores, relevos, arranque suave, termomagneticas, diferenciales, etc.",
-    link: "/electricidad-centro/industria"  
+    categories:
+      "contactores, motores, variadores, relevos, arranque suave, termomagneticas, diferenciales, etc.",
+    link: "/electricidad-centro/industria",
   },
   {
     id: 2,
@@ -217,23 +235,25 @@ export const topic = [
     phrase: "encontra todo para iluminar tu hogar",
     title: "iluminacion",
     categories: "lamparas, faroles, bidireccionales, plafones, colgantes, etc.",
-    link: "/electricidad-centro/iluminacion"  
+    link: "/electricidad-centro/iluminacion",
   },
   {
     id: 3,
     img: conductores,
     phrase: "conecta",
     title: "conductores",
-    categories:"taller, subterraneo, retenax, preensamblado, utp, mallado, soldadura, cu-desnudo, unipolares, etc.",
-    link: "/electricidad-centro/conductores"  
+    categories:
+      "taller, subterraneo, retenax, preensamblado, utp, mallado, soldadura, cu-desnudo, unipolares, etc.",
+    link: "/electricidad-centro/conductores",
   },
   {
     id: 4,
     img: terminales,
     phrase: "terminales de compresion",
     title: "terminales",
-    categories: "cu-estañado, punteras tubulares, preaislado-ojal, bimetalico-forjado, bimetalico, aluminio, etc.",
-    link: "/electricidad-centro/terminales"
+    categories:
+      "cu-estañado, punteras tubulares, preaislado-ojal, bimetalico-forjado, bimetalico, aluminio, etc.",
+    link: "/electricidad-centro/terminales",
   },
   {
     id: 5,
@@ -241,7 +261,7 @@ export const topic = [
     phrase: "materiles electricos de norma",
     title: "materiales normalizados",
     categories: "tillas, bulones, tensores, aisladores, etc.",
-    link: "/electricidad-centro/normalizados"
+    link: "/electricidad-centro/normalizados",
   },
   {
     id: 6,
@@ -249,23 +269,25 @@ export const topic = [
     phrase: "testea todas tu conecciones",
     title: "instrumentos de medicion",
     categories: "multimetros, pinzas amperometricas, puntas de prueba, etc.",
-    link: "/electricidad-centro/instrumentos-de-medicion"
+    link: "/electricidad-centro/instrumentos-de-medicion",
   },
   {
     id: 7,
     img: aereo,
     phrase: "desplasa tus conecciones por los aires",
     title: "linea aerea",
-    categories: "tensores, perchas, derivadores, suspenciones, abrazadare, cables, etc.",
-    link: "/electricidad-centro/linea-aerea"
+    categories:
+      "tensores, perchas, derivadores, suspenciones, abrazadare, cables, etc.",
+    link: "/electricidad-centro/linea-aerea",
   },
   {
     id: 8,
     img: conjuntos,
     phrase: "descubri toda las lineas de conjuntos armados que temos para vos.",
     title: "conjuntos armados",
-    categories: "cambre bauhaus, cambre xxii, cambre xxi, jeluz verona, sica life, etc.",
-    link: "/electricidad-centro/conjuntos-armados"
+    categories:
+      "cambre bauhaus, cambre xxii, cambre xxi, jeluz verona, sica life, etc.",
+    link: "/electricidad-centro/conjuntos-armados",
   },
   {
     id: 9,
@@ -273,15 +295,16 @@ export const topic = [
     phrase: "no te quedaras sin iluminacion",
     title: "luces de emergencia",
     categories: "lamparas autonomas, luces de emergencia, etc.",
-    link: "/electricidad-centro/luces-emergencia"
+    link: "/electricidad-centro/luces-emergencia",
   },
   {
     id: 10,
     img: herramientas,
     phrase: "herramientas de seleccion",
     title: "herramientas",
-    categories: "pinzas, alicates, prensaterminales, cinta metrica, destornilladores, etc.",
-    link: "/electricidad-centro/herramientas"
+    categories:
+      "pinzas, alicates, prensaterminales, cinta metrica, destornilladores, etc.",
+    link: "/electricidad-centro/herramientas",
   },
   {
     id: 11,
@@ -289,7 +312,7 @@ export const topic = [
     phrase: "deriva tus conecciones",
     title: "morceteria",
     categories: "morcetos, derivadores, etc.",
-    link: "/electricidad-centro/morceteria"
+    link: "/electricidad-centro/morceteria",
   },
 ];
 
@@ -1123,69 +1146,69 @@ export const morceteriaT = [
 
 export const bubble = [
   {
-    id:1,
+    id: 1,
     img: motor,
     title: "industria",
-    link: "/electricidad-centro/industria"
+    link: "/electricidad-centro/industria",
   },
   {
-    id:2,
+    id: 2,
     img: lampara,
     title: "iluminacion",
-    link: "/electricidad-centro/iluminacion"
+    link: "/electricidad-centro/iluminacion",
   },
   {
-    id:3,
+    id: 3,
     img: cable,
     title: "cables",
-    link: "/electricidad-centro/conductores"
+    link: "/electricidad-centro/conductores",
   },
   {
-    id:8,
+    id: 8,
     img: armado,
     title: "puntos y toma",
-    link: "/electricidad-centro/conjuntos-armados"
+    link: "/electricidad-centro/conjuntos-armados",
   },
   {
-    id:10,
+    id: 10,
     img: herramienta,
     title: "herramientas",
-    link: "/electricidad-centro/herramientas"
+    link: "/electricidad-centro/herramientas",
   },
   {
-    id:4,
+    id: 4,
     img: terminal,
     title: "terminales",
-    link: "/electricidad-centro/terminales"
+    link: "/electricidad-centro/terminales",
   },
   {
-    id:5,
+    id: 5,
     img: normalizado,
     title: "normalizados",
-    link: "/electricidad-centro/normalizados"
+    link: "/electricidad-centro/normalizados",
   },
   {
-    id:6,
+    id: 6,
     img: medicion,
     title: "testing",
-    link: "/electricidad-centro/instrumentos-de-medicion"
+    link: "/electricidad-centro/instrumentos-de-medicion",
   },
   {
-    id:7,
+    id: 7,
     img: aereoo,
     title: "aereo",
-    link: "/electricidad-centro/linea-aerea"
+    link: "/electricidad-centro/linea-aerea",
   },
   {
-    id:9,
+    id: 9,
     img: emergenciaa,
     title: "emergencia",
-    link: "/electricidad-centro/luces-emergencia"
+    link: "/electricidad-centro/luces-emergencia",
   },
   {
-    id:12,
+    id: 12,
     img: morceto,
     title: "morcetos",
-    link: "/electricidad-centro/morceteria"
+    link: "/electricidad-centro/morceteria",
   },
-]
+];

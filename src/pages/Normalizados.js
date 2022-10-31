@@ -1,3 +1,5 @@
+import Footer from "../components/Footer";
+
 const Normalizados = ({ topic, normalizadosT }) => {
   return (
     <div className="layout">
@@ -23,6 +25,7 @@ const Normalizados = ({ topic, normalizadosT }) => {
           </div>
         ))}
       </div>
+      <Footer></Footer>
     </div>
   );
 };

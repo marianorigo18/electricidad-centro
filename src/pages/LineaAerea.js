@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../components/Footer";
 
 const LineaAerea = ({topic, aereoT}) => {
   return (
@@ -25,6 +26,7 @@ const LineaAerea = ({topic, aereoT}) => {
           </div>
         ))}
       </div>
+      <Footer></Footer>
     </div>
   );
 };

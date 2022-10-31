@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../components/Footer";
 
 const LucesEmergencia = ({topic, emergenciaT}) => {
   return (
@@ -25,6 +26,7 @@ const LucesEmergencia = ({topic, emergenciaT}) => {
           </div>
         ))}
       </div>
+      <Footer></Footer>
     </div>
   );
 };

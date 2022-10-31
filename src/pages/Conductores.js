@@ -1,3 +1,4 @@
+import Footer from "../components/Footer";
 import { topic, conductoresT } from "../exports/data";
 import "./Page.css";
 
@@ -30,6 +31,7 @@ const Conductores = () => {
           </div>
         ))}
       </div>
+      <Footer></Footer>
       </div>
   )
 }

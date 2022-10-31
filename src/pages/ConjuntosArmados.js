@@ -1,3 +1,5 @@
+import Footer from "../components/Footer";
+
 const ConjuntosArmados = ({
   topic,
   armadosT,
@@ -113,6 +115,7 @@ const ConjuntosArmados = ({
           </div>
         ))}
       </div>
+      <Footer></Footer>
     </div>
   );
 };

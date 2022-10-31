@@ -1,3 +1,4 @@
+import Footer from "../components/Footer";
 
 const Instrumentos = ({ topic, instrumentosT }) => {
   return (
@@ -28,6 +29,7 @@ const Instrumentos = ({ topic, instrumentosT }) => {
           </div>
         ))}
       </div>
+      <Footer></Footer>
     </div>
   );
 };
