@@ -1,14 +1,17 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-const FooterS = styled.div``;
+const FooterS = styled.div`
+background-color: #000;
+`;
 const FooterContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: max-content max-content max-content max-content max-content;
-  background-color: #000;
+  grid-template-rows: max-content max-content max-content max-content;
   text-transform: uppercase;
   color: #ffffff;
+  max-width: 1500px;
+  margin: 0 auto;
   @media(min-width: 580px){
       grid-template-columns: 1fr 1fr;
   }
@@ -21,7 +24,9 @@ const GridItem = styled.div`
 const Title = styled.h4`
     margin: 40px 0;
     padding-left: 15px;
-    color: yellow;
+    color: #F7DC6F;
+    font-weight: 100;
+    font-size: 26px;
 `
 const ListItemContent = styled.ul`
   display: grid;
@@ -34,6 +39,10 @@ const ListItemContent = styled.ul`
   }
   li a{
     color: #ffffff;
+    font-weight: 100;
+  }
+  @media(min-width: 768px){
+    grid-template-columns: 1fr;
   }
 `;
 const ListItemContact = styled.div`
@@ -43,6 +52,9 @@ text-transform: lowercase;
 li{
   margin: 5px 0;
   padding-left: 15px;
+}
+li a{
+  font-weight: 100;
 }
 `
 
@@ -82,13 +94,10 @@ const Footer = () => {
           </ListItemContent>
         </GridItem>
         <GridItem>
-          <Title>social</Title>
+          <Title>red social</Title>
           <ListItemContent>
             <li>instagram</li>
           </ListItemContent>
-        </GridItem>
-        <GridItem>
-          <Title>hello</Title>
         </GridItem>
       </FooterContainer>
     </FooterS>

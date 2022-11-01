@@ -200,6 +200,11 @@ import morceto from "../assets/bubble/morceto.jpg";
 import motor from "../assets/bubble/motor.jpg";
 import normalizado from "../assets/bubble/normalizados.jpg";
 import terminal from "../assets/bubble/terminal.jpg";
+/*topic-two*/ 
+import cablesTwo from "../assets/topics-two/cables.jpg";
+import lamparasTwo from "../assets/topics-two/lamparas.jpg";
+import herramientasTwo from "../assets/topics-two/herramientas.jpg";
+import industriaTwo from "../assets/topics-two/industria.jpg";
 
 export const logos = [
   {
@@ -1212,3 +1217,26 @@ export const bubble = [
     link: "/electricidad-centro/morceteria",
   },
 ];
+
+export const topicTwo = [
+  {
+    id: 1,
+    img: cablesTwo,
+    title: "cable"
+  },
+  {
+    id: 2,
+    img: lamparasTwo,
+    title: "lamparas"
+  },
+  {
+    id: 3,
+    img: herramientasTwo,
+    title: "herramientas"
+  },
+  {
+    id: 4,
+    img: industriaTwo,
+    title: "industria"
+  },
+] 

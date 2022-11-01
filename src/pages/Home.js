@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Footer from "../components/Footer";
-import { topic, iluminacionT, logos} from "../exports/data";
+import { topic, iluminacionT, logos, topicTwo, conductoresT, armadosBauhaus, terminalesT, herramientasT, industriaT} from "../exports/data";
 const LayoutHome = styled.div`
   max-width: 1000px;
   width: 100%;
@@ -166,6 +166,7 @@ const InfoContTitle = styled.div`
 `;
 const Home = () => {
   return (
+    <div>
     <LayoutHome>
       <Hidden>
         <HiddenContainer>
@@ -188,27 +189,29 @@ const Home = () => {
           <InfoContainer>
             <InfoContImages>
               <InfoContSingleImage>
-                <Img src={iluminacionT[4].img} alt={topic[4].title}></Img>
+                <Img src={iluminacionT[0].img} alt={iluminacionT[0].title}></Img>
               </InfoContSingleImage>
               <InfoContSingleImage>
-                <Img src={iluminacionT[2].img} alt={topic[5].title}></Img>
+                <Img src={iluminacionT[1].img} alt={iluminacionT[1].title}></Img>
               </InfoContSingleImage>
             </InfoContImages>
             <InfoContTitle>
-              <p>BIDIRECCIONAL</p>
+              <p>LAMPARAS</p>
             </InfoContTitle>
           </InfoContainer>
         </GridItem>
 
         <GridItem>
-          <ImageContainer>
-            <Img src={topic[2].img} alt={topic[0].title}></Img>
-          </ImageContainer>
+          <Link to="/electricidad-centro/iluminacion">
+            <ImageContainer>
+              <Img src={topicTwo[1].img} alt={topicTwo[1].title}></Img>
+            </ImageContainer>
+          </Link>
         </GridItem>
 
         <GridItem>
           <ImageContainer>
-            <Img src={topic[1].img} alt={topic[0].title}></Img>
+            <Img src={topicTwo[0].img} alt={topicTwo[0].title}></Img>
           </ImageContainer>
         </GridItem>
 
@@ -216,14 +219,14 @@ const Home = () => {
           <InfoContainer>
             <InfoContImages>
               <InfoContSingleImage>
-                <Img src={iluminacionT[1].img} alt={topic[4].title}></Img>
+                <Img src={conductoresT[1].img} alt={topic[4].title}></Img>
               </InfoContSingleImage>
               <InfoContSingleImage>
-                <Img src={iluminacionT[4].img} alt={topic[5].title}></Img>
+                <Img src={conductoresT[8].img} alt={topic[5].title}></Img>
               </InfoContSingleImage>
             </InfoContImages>
             <InfoContTitle>
-              <p>BIDIRECCIONAL</p>
+              <p>CONDUCTORES</p>
             </InfoContTitle>
           </InfoContainer>
         </GridItem>
@@ -232,27 +235,27 @@ const Home = () => {
           <InfoContainer>
             <InfoContImages>
               <InfoContSingleImage>
-                <Img src={iluminacionT[4].img} alt={topic[4].title}></Img>
+                <Img src={armadosBauhaus[1].img} alt={topic[4].title}></Img>
               </InfoContSingleImage>
               <InfoContSingleImage>
-                <Img src={iluminacionT[2].img} alt={topic[5].title}></Img>
+                <Img src={armadosBauhaus[2].img} alt={topic[5].title}></Img>
               </InfoContSingleImage>
             </InfoContImages>
             <InfoContTitle>
-              <p>BIDIRECCIONAL</p>
+              <p>PUNTOS Y TOMA</p>
             </InfoContTitle>
           </InfoContainer>
         </GridItem>
 
         <GridItem>
           <ImageContainer>
-            <Img src={topic[0].img} alt={topic[0].title}></Img>
+            <Img src={topic[7].img} alt={topic[0].title}></Img>
           </ImageContainer>
         </GridItem>
 
         <GridItem>
           <ImageContainer>
-            <Img src={topic[0].img} alt={topic[0].title}></Img>
+            <Img src={topic[3].img} alt={topic[0].title}></Img>
           </ImageContainer>
         </GridItem>
 
@@ -260,20 +263,65 @@ const Home = () => {
           <InfoContainer>
             <InfoContImages>
               <InfoContSingleImage>
-                <Img src={iluminacionT[1].img} alt={topic[4].title}></Img>
+                <Img src={terminalesT[1].img} alt={topic[4].title}></Img>
               </InfoContSingleImage>
               <InfoContSingleImage>
-                <Img src={iluminacionT[4].img} alt={topic[5].title}></Img>
+                <Img src={terminalesT[5].img} alt={topic[5].title}></Img>
               </InfoContSingleImage>
             </InfoContImages>
             <InfoContTitle>
-              <p>BIDIRECCIONAL</p>
+              <p>TERMINALES</p>
+            </InfoContTitle>
+          </InfoContainer>
+        </GridItem>
+                {/*Duplicate*/}
+                <GridItem>
+          <InfoContainer>
+            <InfoContImages>
+              <InfoContSingleImage>
+                <Img src={herramientasT[0].herramientas[1].img} alt={topic[4].title}></Img>
+              </InfoContSingleImage>
+              <InfoContSingleImage>
+              <Img src={herramientasT[0].stanley[2].img} alt={topic[4].title}></Img>
+              </InfoContSingleImage>
+            </InfoContImages>
+            <InfoContTitle>
+              <p>HERRAMIENTAS</p>
+            </InfoContTitle>
+          </InfoContainer>
+        </GridItem>
+
+        <GridItem>
+          <ImageContainer>
+            <Img src={topicTwo[2].img} alt={topic[0].title}></Img>
+          </ImageContainer>
+        </GridItem>
+
+        <GridItem>
+          <ImageContainer>
+            <Img src={topicTwo[3].img} alt={topic[0].title}></Img>
+          </ImageContainer>
+        </GridItem>
+
+        <GridItem>
+          <InfoContainer>
+            <InfoContImages>
+              <InfoContSingleImage>
+                <Img src={industriaT[1].img} alt={topic[4].title}></Img>
+              </InfoContSingleImage>
+              <InfoContSingleImage>
+                <Img src={industriaT[2].img} alt={topic[5].title}></Img>
+              </InfoContSingleImage>
+            </InfoContImages>
+            <InfoContTitle>
+              <p>INDUSTRIA</p>
             </InfoContTitle>
           </InfoContainer>
         </GridItem>
       </LayoutContainer>
-      <Footer></Footer>
     </LayoutHome>
+      <Footer></Footer>
+    </div>
   );
 };
 
