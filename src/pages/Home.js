@@ -283,7 +283,7 @@ const Home = () => {
           </GridItem>
 
           <GridItem>
-            <Link to="/terminales">
+            <Link to="/terminales" preventScrollReset={true}>
               <ImageContainer>
                 <Img src={topic[3].img} alt={topic[0].title}></Img>
               </ImageContainer>
@@ -291,7 +291,7 @@ const Home = () => {
           </GridItem>
 
           <GridItem>
-            <Link to="/terminales">
+            <Link to="/terminales" preventScrollReset={true}>
               <InfoContainer>
                 <InfoContImages>
                   <InfoContSingleImage>
