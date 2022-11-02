@@ -14,6 +14,7 @@ import ConjuntosArmados from "./pages/ConjuntosArmados";
 import LucesEmergencia from "./pages/LucesEmergencia";
 import Herramientas from "./pages/Herramientas";
 import Morceteria from "./pages/Morceteria";
+import Contact from "./pages/Contact";
 
 import {logos, topic, iluminacionT, normalizadosT, instrumentosT, aereoT, emergenciaT, armadosT, armadosSica, armadosJeluz, armadosXx1, armadosXxii, armadosBauhaus, herramientasT, morceteriaT} from './exports/data'
 
@@ -29,18 +30,19 @@ class App extends Component {
       <BrowserRouter>
           <Navbar logos={this.state.logos} toppic={topic} logo={logos}/>
           <Routes>
-            <Route path="/electricidad-centro" element={<Home topicSection={this.state.topicSection} toppic={topic}/>}/>
-            <Route path="/electricidad-centro/industria" element={<Industria topic={topic}/>} />
-            <Route path="/electricidad-centro/iluminacion" element={<Iluminacion iluminacionT={iluminacionT}/>} />
-            <Route path="/electricidad-centro/conductores" element={<Conductores topic={topic}/>} />
-            <Route path="/electricidad-centro/terminales" element={<Terminales topic={topic}/>} />
-            <Route path="/electricidad-centro/normalizados" element={<Normalizados topic={topic} normalizadosT={normalizadosT}/>} />
-            <Route path="/electricidad-centro/instrumentos-de-medicion"element={<Instrumentos topic={topic} instrumentosT={instrumentosT}/>}/>
-            <Route path="/electricidad-centro/linea-aerea" element={<LineaAerea topic={topic} aereoT={aereoT}/>} />
-            <Route path="/electricidad-centro/conjuntos-armados" element={<ConjuntosArmados topic={topic} armadosT={armadosT} armadosSica={armadosSica} armadosJeluz={armadosJeluz} armadosXx1={armadosXx1} armadosXxii={armadosXxii} armadosBauhaus={armadosBauhaus}/>} />
-            <Route path="/electricidad-centro/luces-emergencia" element={<LucesEmergencia topic={topic} emergenciaT={emergenciaT}/>} />
-            <Route path="/electricidad-centro/herramientas" element={<Herramientas topic={topic} herramientasT={herramientasT}/>} />
-            <Route path="/electricidad-centro/morceteria" element={<Morceteria topic={topic} morceteriaT={morceteriaT}/>} />
+            <Route path="/" element={<Home topicSection={this.state.topicSection} toppic={topic}/>}/>
+            <Route path="/industria" element={<Industria topic={topic}/>} />
+            <Route path="/iluminacion" element={<Iluminacion iluminacionT={iluminacionT}/>} />
+            <Route path="/conductores" element={<Conductores topic={topic}/>} />
+            <Route path="/terminales" element={<Terminales topic={topic}/>} />
+            <Route path="/normalizados" element={<Normalizados topic={topic} normalizadosT={normalizadosT}/>} />
+            <Route path="/instrumentos-de-medicion"element={<Instrumentos topic={topic} instrumentosT={instrumentosT}/>}/>
+            <Route path="/linea-aerea" element={<LineaAerea topic={topic} aereoT={aereoT}/>} />
+            <Route path="/conjuntos-armados" element={<ConjuntosArmados topic={topic} armadosT={armadosT} armadosSica={armadosSica} armadosJeluz={armadosJeluz} armadosXx1={armadosXx1} armadosXxii={armadosXxii} armadosBauhaus={armadosBauhaus}/>} />
+            <Route path="/luces-emergencia" element={<LucesEmergencia topic={topic} emergenciaT={emergenciaT}/>} />
+            <Route path="/herramientas" element={<Herramientas topic={topic} herramientasT={herramientasT}/>} />
+            <Route path="/morceteria" element={<Morceteria topic={topic} morceteriaT={morceteriaT}/>} />
+            <Route path="/contacto" element={<Contact/>}/>
           </Routes>
       </BrowserRouter>
     );

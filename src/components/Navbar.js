@@ -8,24 +8,24 @@ const Navbar = () => {
   return (
     <nav className="menu">
       <section className="menu__container">
-        <Link to="/electricidad-centro" className="container__logo">
+        <Link to="/" className="container__logo">
           <img src={logos[0].img} alt={logos[0].alt}></img>
         </Link>
         <ul className="menu__links">
           <li className="menu__item">
-            <Link to="/electricidad-centro/contacto" className="menu__link">
+            <Link to="/contacto" className="menu__link">
               contacto
             </Link>
           </li>
           <li className="menu__item menu__item--show">
-            <Link to="/electricidad-centro" className="menu__link">
+            <Link to="/" className="menu__link">
               Categorias
               <i class="bx bx-chevron-down menu__arrow"></i>
             </Link>
             <ul className="menu__nesting">
               <li className="menu__inside">
                 <Link
-                  to="/electricidad-centro/industria"
+                  to="/"
                   className="menu__link menu__link--inside"
                 >
                   Industria
@@ -33,7 +33,7 @@ const Navbar = () => {
               </li>
               <li className="menu__inside">
                 <Link
-                  to="/electricidad-centro/iluminacion"
+                  to="/iluminacion"
                   className="menu__link menu__link--inside"
                 >
                   Iluminacion
@@ -41,7 +41,7 @@ const Navbar = () => {
               </li>
               <li className="menu__inside">
                 <Link
-                  to="/electricidad-centro/conductores"
+                  to="/conductores"
                   className="menu__link menu__link--inside"
                 >
                   Conductores
@@ -49,7 +49,7 @@ const Navbar = () => {
               </li>
               <li className="menu__inside">
                 <Link
-                  to="/electricidad-centro/terminales"
+                  to="/terminales"
                   className="menu__link menu__link--inside"
                 >
                   Terminales
@@ -57,7 +57,7 @@ const Navbar = () => {
               </li>
               <li className="menu__inside">
                 <Link
-                  to="/electricidad-centro/normalizados"
+                  to="/normalizados"
                   className="menu__link menu__link--inside"
                 >
                   Normalizados
@@ -65,7 +65,7 @@ const Navbar = () => {
               </li>
               <li className="menu__inside">
                 <Link
-                  to="/electricidad-centro/instrumentos-de-medicion"
+                  to="/instrumentos-de-medicion"
                   className="menu__link menu__link--inside"
                 >
                   Instrumentos de Medicion
@@ -73,7 +73,7 @@ const Navbar = () => {
               </li>
               <li className="menu__inside">
                 <Link
-                  to="/electricidad-centro/linea-aerea"
+                  to="/linea-aerea"
                   className="menu__link menu__link--inside"
                 >
                   Linea Aerea
@@ -81,7 +81,7 @@ const Navbar = () => {
               </li>
               <li className="menu__inside">
                 <Link
-                  to="/electricidad-centro/conjuntos-armados"
+                  to="/conjuntos-armados"
                   className="menu__link menu__link--inside"
                 >
                   Conjuntos Armados
@@ -89,7 +89,7 @@ const Navbar = () => {
               </li>
               <li className="menu__inside">
                 <Link
-                  to="/electricidad-centro/luces-emergencia"
+                  to="/luces-emergencia"
                   className="menu__link menu__link--inside"
                 >
                   Luces de Emergencia
@@ -97,7 +97,7 @@ const Navbar = () => {
               </li>
               <li className="menu__inside">
                 <Link
-                  to="/electricidad-centro/herramientas"
+                  to="/herramientas"
                   className="menu__link menu__link--inside"
                 >
                   Herramientas
@@ -105,7 +105,7 @@ const Navbar = () => {
               </li>
               <li className="menu__inside">
                 <Link
-                  to="/electricidad-centro/morceteria"
+                  to="/morceteria"
                   className="menu__link menu__link--inside"
                 >
                   Morceteria

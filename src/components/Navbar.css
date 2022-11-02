@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800&display=swap');
 *,
 *::after,
 *::before{
@@ -30,12 +31,17 @@ body{
     justify-content: space-between;
     align-items: center;
     width: 90%;
-    max-width: 1000px;
+    max-width: 1700px;
     height: 100%;
     margin: 0 auto;
 }
 .container__logo{
     width: 250px;
+}
+@media(max-width: 480px){
+    .container__logo{
+        width: 180px;
+    }
 }
 .menu__container a img{
     width: 100%;
@@ -202,7 +208,6 @@ body{
         margin-left: auto;
         border-left: 1px solid #717171;
     }
-
 }
 @media(max-width: 480px){
     .anuncio{
