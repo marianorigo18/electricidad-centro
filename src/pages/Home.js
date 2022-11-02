@@ -1,13 +1,23 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Footer from "../components/Footer";
-import { topic, iluminacionT, logos, topicTwo, conductoresT, armadosBauhaus, terminalesT, herramientasT, industriaT} from "../exports/data";
+import {
+  topic,
+  iluminacionT,
+  logos,
+  topicTwo,
+  conductoresT,
+  armadosBauhaus,
+  terminalesT,
+  herramientasT,
+  industriaT,
+} from "../exports/data";
 const LayoutHome = styled.div`
   max-width: 1000px;
   width: 100%;
   box-sizing: border-box;
   margin: 120px auto 5px auto;
-  @media(min-width: 768px){
+  @media (min-width: 768px) {
     margin: 140px auto 5px auto;
   }
 `;
@@ -17,7 +27,7 @@ const Hidden = styled.div`
   grid-template-rows: 200px;
   background-color: #151515;
   margin-bottom: 20px;
-  @media(min-width:768px){
+  @media (min-width: 768px) {
     margin-bottom: 70px;
     grid-template-rows: 280px;
   }
@@ -31,51 +41,51 @@ const HiddenContainer = styled.div`
 const HiddenTitle = styled.h2`
   font-size: 15px;
   color: #ffffff;
-  font-weight:100;
+  font-weight: 100;
   @media (min-width: 768px) {
     font-size: 30px;
     padding-left: 34px;
   }
-  `;
-  const HiddenParagraph = styled.p`
+`;
+const HiddenParagraph = styled.p`
   font-size: 9px;
   color: #838383;
-  font-weight:100;
+  font-weight: 100;
   @media (min-width: 768px) {
     font-size: 12px;
     padding-left: 34px;
   }
 `;
 const ImgHiddenContainer = styled.div`
-display: flex;
-justify-content: center;
-align-items: center;
-`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
 const ImgHidden = styled.img`
-  height: 80% ;
-`
+  height: 80%;
+`;
 const TitleSelection = styled.h1`
   font-size: 18px;
   font-weight: 100;
   padding-left: 5px;
   margin-bottom: 15px;
   text-transform: uppercase;
-  @media(min-width: 768px){
+  @media (min-width: 768px) {
     font-size: 26px;
     margin-bottom: 40px;
   }
-`
+`;
 const ButtonContact = styled.div`
-  a{
+  a {
     display: block;
     width: max-content;
     padding: 2px 5px;
-    color: #FFFFFF;
+    color: #ffffff;
     border: 1px solid #ffffff;
     margin-top: 10px;
     font-size: 12px;
   }
-`
+`;
 const LayoutContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -167,159 +177,196 @@ const InfoContTitle = styled.div`
 const Home = () => {
   return (
     <div>
-    <LayoutHome>
-      <Hidden>
-        <HiddenContainer>
-          <HiddenTitle>
-            SOMOS LIDERES EN MATERIALES ELECTRICOS E ILUMINACION.
-          </HiddenTitle>
-          <HiddenParagraph>
-            PRODUCTOS DE PRIMERA LINEA Y CALIDAD PROCEDENTES DE UNA COMPLETA
-            VARIEDAD DE MARCAS.
-            <ButtonContact><Link to="/electricidad-centro/contacto">contacto</Link></ButtonContact>
-          </HiddenParagraph>
-        </HiddenContainer>
-        <ImgHiddenContainer>
-          <ImgHidden src={logos[2].img}></ImgHidden>
-        </ImgHiddenContainer>
-      </Hidden>
+      <LayoutHome>
+        <Hidden>
+          <HiddenContainer>
+            <HiddenTitle>
+              SOMOS LIDERES EN MATERIALES ELECTRICOS E ILUMINACION.
+            </HiddenTitle>
+            <HiddenParagraph>
+              PRODUCTOS DE PRIMERA LINEA Y CALIDAD PROCEDENTES DE UNA COMPLETA
+              VARIEDAD DE MARCAS.
+              <ButtonContact>
+                <Link to="/contacto">contacto</Link>
+              </ButtonContact>
+            </HiddenParagraph>
+          </HiddenContainer>
+          <ImgHiddenContainer>
+            <ImgHidden src={logos[2].img}></ImgHidden>
+          </ImgHiddenContainer>
+        </Hidden>
         <TitleSelection>seleccion categorias</TitleSelection>
-      <LayoutContainer>
-        <GridItem>
-          <InfoContainer>
-            <InfoContImages>
-              <InfoContSingleImage>
-                <Img src={iluminacionT[0].img} alt={iluminacionT[0].title}></Img>
-              </InfoContSingleImage>
-              <InfoContSingleImage>
-                <Img src={iluminacionT[1].img} alt={iluminacionT[1].title}></Img>
-              </InfoContSingleImage>
-            </InfoContImages>
-            <InfoContTitle>
-              <p>LAMPARAS</p>
-            </InfoContTitle>
-          </InfoContainer>
-        </GridItem>
 
-        <GridItem>
-          <Link to="/electricidad-centro/iluminacion">
-            <ImageContainer>
-              <Img src={topicTwo[1].img} alt={topicTwo[1].title}></Img>
-            </ImageContainer>
-          </Link>
-        </GridItem>
+        <LayoutContainer>
+          <GridItem>
+            <Link to="/iluminacion">
+              <InfoContainer>
+                <InfoContImages>
+                  <InfoContSingleImage>
+                    <Img
+                      src={iluminacionT[0].img}
+                      alt={iluminacionT[0].title}
+                    ></Img>
+                  </InfoContSingleImage>
+                  <InfoContSingleImage>
+                    <Img
+                      src={iluminacionT[1].img}
+                      alt={iluminacionT[1].title}
+                    ></Img>
+                  </InfoContSingleImage>
+                </InfoContImages>
+                <InfoContTitle>
+                  <p>LAMPARAS</p>
+                </InfoContTitle>
+              </InfoContainer>
+            </Link>
+          </GridItem>
 
-        <GridItem>
-          <ImageContainer>
-            <Img src={topicTwo[0].img} alt={topicTwo[0].title}></Img>
-          </ImageContainer>
-        </GridItem>
+          <GridItem>
+            <Link to="/iluminacion">
+              <ImageContainer>
+                <Img src={topicTwo[1].img} alt={topicTwo[1].title}></Img>
+              </ImageContainer>
+            </Link>
+          </GridItem>
 
-        <GridItem>
-          <InfoContainer>
-            <InfoContImages>
-              <InfoContSingleImage>
-                <Img src={conductoresT[1].img} alt={topic[4].title}></Img>
-              </InfoContSingleImage>
-              <InfoContSingleImage>
-                <Img src={conductoresT[8].img} alt={topic[5].title}></Img>
-              </InfoContSingleImage>
-            </InfoContImages>
-            <InfoContTitle>
-              <p>CONDUCTORES</p>
-            </InfoContTitle>
-          </InfoContainer>
-        </GridItem>
-        {/*Duplicate*/}
-        <GridItem>
-          <InfoContainer>
-            <InfoContImages>
-              <InfoContSingleImage>
-                <Img src={armadosBauhaus[1].img} alt={topic[4].title}></Img>
-              </InfoContSingleImage>
-              <InfoContSingleImage>
-                <Img src={armadosBauhaus[2].img} alt={topic[5].title}></Img>
-              </InfoContSingleImage>
-            </InfoContImages>
-            <InfoContTitle>
-              <p>PUNTOS Y TOMA</p>
-            </InfoContTitle>
-          </InfoContainer>
-        </GridItem>
+          <GridItem>
+            <Link to="/conductores">
+              <ImageContainer>
+                <Img src={topicTwo[0].img} alt={topicTwo[0].title}></Img>
+              </ImageContainer>
+            </Link>
+          </GridItem>
 
-        <GridItem>
-          <ImageContainer>
-            <Img src={topic[7].img} alt={topic[0].title}></Img>
-          </ImageContainer>
-        </GridItem>
+          <GridItem>
+            <Link to="/conductores">
+              <InfoContainer>
+                <InfoContImages>
+                  <InfoContSingleImage>
+                    <Img src={conductoresT[1].img} alt={topic[4].title}></Img>
+                  </InfoContSingleImage>
+                  <InfoContSingleImage>
+                    <Img src={conductoresT[8].img} alt={topic[5].title}></Img>
+                  </InfoContSingleImage>
+                </InfoContImages>
+                <InfoContTitle>
+                  <p>CONDUCTORES</p>
+                </InfoContTitle>
+              </InfoContainer>
+            </Link>
+          </GridItem>
+          {/*Duplicate*/}
+          <GridItem>
+            <Link to="/conjuntos-armados">
+              <InfoContainer>
+                <InfoContImages>
+                  <InfoContSingleImage>
+                    <Img src={armadosBauhaus[1].img} alt={topic[4].title}></Img>
+                  </InfoContSingleImage>
+                  <InfoContSingleImage>
+                    <Img src={armadosBauhaus[2].img} alt={topic[5].title}></Img>
+                  </InfoContSingleImage>
+                </InfoContImages>
+                <InfoContTitle>
+                  <p>PUNTOS Y TOMA</p>
+                </InfoContTitle>
+              </InfoContainer>
+            </Link>
+          </GridItem>
 
-        <GridItem>
-          <ImageContainer>
-            <Img src={topic[3].img} alt={topic[0].title}></Img>
-          </ImageContainer>
-        </GridItem>
+          <GridItem>
+            <Link to="/conjuntos-armados">
+              <ImageContainer>
+                <Img src={topic[7].img} alt={topic[0].title}></Img>
+              </ImageContainer>
+            </Link>
+          </GridItem>
 
-        <GridItem>
-          <InfoContainer>
-            <InfoContImages>
-              <InfoContSingleImage>
-                <Img src={terminalesT[1].img} alt={topic[4].title}></Img>
-              </InfoContSingleImage>
-              <InfoContSingleImage>
-                <Img src={terminalesT[5].img} alt={topic[5].title}></Img>
-              </InfoContSingleImage>
-            </InfoContImages>
-            <InfoContTitle>
-              <p>TERMINALES</p>
-            </InfoContTitle>
-          </InfoContainer>
-        </GridItem>
-                {/*Duplicate*/}
-                <GridItem>
-          <InfoContainer>
-            <InfoContImages>
-              <InfoContSingleImage>
-                <Img src={herramientasT[0].herramientas[1].img} alt={topic[4].title}></Img>
-              </InfoContSingleImage>
-              <InfoContSingleImage>
-              <Img src={herramientasT[0].stanley[2].img} alt={topic[4].title}></Img>
-              </InfoContSingleImage>
-            </InfoContImages>
-            <InfoContTitle>
-              <p>HERRAMIENTAS</p>
-            </InfoContTitle>
-          </InfoContainer>
-        </GridItem>
+          <GridItem>
+            <Link to="/terminales">
+              <ImageContainer>
+                <Img src={topic[3].img} alt={topic[0].title}></Img>
+              </ImageContainer>
+            </Link>
+          </GridItem>
 
-        <GridItem>
-          <ImageContainer>
-            <Img src={topicTwo[2].img} alt={topic[0].title}></Img>
-          </ImageContainer>
-        </GridItem>
+          <GridItem>
+            <Link to="/terminales">
+              <InfoContainer>
+                <InfoContImages>
+                  <InfoContSingleImage>
+                    <Img src={terminalesT[1].img} alt={topic[4].title}></Img>
+                  </InfoContSingleImage>
+                  <InfoContSingleImage>
+                    <Img src={terminalesT[5].img} alt={topic[5].title}></Img>
+                  </InfoContSingleImage>
+                </InfoContImages>
+                <InfoContTitle>
+                  <p>TERMINALES</p>
+                </InfoContTitle>
+              </InfoContainer>
+            </Link>
+          </GridItem>
+          {/*Duplicate*/}
+          <GridItem>
+            <Link to="/herramientas">
+              <InfoContainer>
+                <InfoContImages>
+                  <InfoContSingleImage>
+                    <Img
+                      src={herramientasT[0].herramientas[1].img}
+                      alt={topic[4].title}
+                    ></Img>
+                  </InfoContSingleImage>
+                  <InfoContSingleImage>
+                    <Img
+                      src={herramientasT[0].stanley[2].img}
+                      alt={topic[4].title}
+                    ></Img>
+                  </InfoContSingleImage>
+                </InfoContImages>
+                <InfoContTitle>
+                  <p>HERRAMIENTAS</p>
+                </InfoContTitle>
+              </InfoContainer>
+            </Link>
+          </GridItem>
 
-        <GridItem>
-          <ImageContainer>
-            <Img src={topicTwo[3].img} alt={topic[0].title}></Img>
-          </ImageContainer>
-        </GridItem>
+          <GridItem>
+            <Link to="/herramientas">
+              <ImageContainer>
+                <Img src={topicTwo[2].img} alt={topic[0].title}></Img>
+              </ImageContainer>
+            </Link>
+          </GridItem>
 
-        <GridItem>
-          <InfoContainer>
-            <InfoContImages>
-              <InfoContSingleImage>
-                <Img src={industriaT[1].img} alt={topic[4].title}></Img>
-              </InfoContSingleImage>
-              <InfoContSingleImage>
-                <Img src={industriaT[2].img} alt={topic[5].title}></Img>
-              </InfoContSingleImage>
-            </InfoContImages>
-            <InfoContTitle>
-              <p>INDUSTRIA</p>
-            </InfoContTitle>
-          </InfoContainer>
-        </GridItem>
-      </LayoutContainer>
-    </LayoutHome>
+          <GridItem>
+            <Link to="/industria">
+              <ImageContainer>
+                <Img src={topicTwo[3].img} alt={topic[0].title}></Img>
+              </ImageContainer>
+            </Link>
+          </GridItem>
+
+          <GridItem>
+            <Link to="/industria">
+              <InfoContainer>
+                <InfoContImages>
+                  <InfoContSingleImage>
+                    <Img src={industriaT[1].img} alt={topic[4].title}></Img>
+                  </InfoContSingleImage>
+                  <InfoContSingleImage>
+                    <Img src={industriaT[2].img} alt={topic[5].title}></Img>
+                  </InfoContSingleImage>
+                </InfoContImages>
+                <InfoContTitle>
+                  <p>INDUSTRIA</p>
+                </InfoContTitle>
+              </InfoContainer>
+            </Link>
+          </GridItem>
+        </LayoutContainer>
+      </LayoutHome>
       <Footer></Footer>
     </div>
   );

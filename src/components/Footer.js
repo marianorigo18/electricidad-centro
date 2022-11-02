@@ -65,17 +65,17 @@ const Footer = () => {
         <GridItem>
           <Title>contenido</Title>
           <ListItemContent>
-            <li><Link to="/electricidad-centro/industria">industria</Link></li>
-            <li><Link to="/electricidad-centro/iluminacion">iluminacion</Link></li>
-            <li><Link to="/electricidad-centro/conductores">cables</Link></li>
-            <li><Link to="/electricidad-centro/terminales">terminales</Link></li>
-            <li><Link to="/electricidad-centro/normalizados">normalizados</Link></li>
-            <li><Link to="/electricidad-centro/instrumentos-de-medicion">medidores</Link></li>
-            <li><Link to="/electricidad-centro/linea-aerea">linea aerea</Link></li>
-            <li><Link to="/electricidad-centro/conjuntos-armados">puntos y tomas</Link></li>
-            <li><Link to="/electricidad-centro/luces-emergencia">emergencia</Link></li>
-            <li><Link to="/electricidad-centro/herramientas">herramientas</Link></li>
-            <li><Link to="/electricidad-centro/morceteria">morceteria</Link></li>
+            <li><Link to="/industria">industria</Link></li>
+            <li><Link to="/iluminacion">iluminacion</Link></li>
+            <li><Link to="/conductores">cables</Link></li>
+            <li><Link to="/terminales">terminales</Link></li>
+            <li><Link to="/normalizados">normalizados</Link></li>
+            <li><Link to="/instrumentos-de-medicion">medidores</Link></li>
+            <li><Link to="/linea-aerea">linea aerea</Link></li>
+            <li><Link to="/conjuntos-armados">puntos y tomas</Link></li>
+            <li><Link to="/luces-emergencia">emergencia</Link></li>
+            <li><Link to="/herramientas">herramientas</Link></li>
+            <li><Link to="/morceteria">morceteria</Link></li>
           </ListItemContent>
         </GridItem>
         <GridItem>
